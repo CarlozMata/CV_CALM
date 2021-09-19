@@ -11,7 +11,6 @@ html, body {
     justify-content: center;
     background-color: black;
     border-bottom: 1px solid #6E767A;
-
 }
 
 .presentacion_foto img {
@@ -32,7 +31,6 @@ html, body {
 }
 
 .presentacion_carrera{
-    margin-top: 0px;
     height: 40px;
 }
 
@@ -59,18 +57,30 @@ html, body {
 }
 
 .contenido{
-    display:flex;
     background-color: #D3D3D3;
-    height: 200px;
+    height: 400px;
+}
+
+.grid-contenido-columns-informacionpersonal{
+    display:grid;
+    grid-template-columns: 50% 50%;
+    justify-content: center;
+}
+
+.grid-contenido-columns-left{
+    text-align: center;
+    justify-content:end;
+}
+
+.experiencia {
+    height: 100px;
 }
 
 .certificaciones {
     height: 40px;
 }
 
-.experiencia {
-    height: 100px;
-}
+
 
 footer{
     display:flex;
