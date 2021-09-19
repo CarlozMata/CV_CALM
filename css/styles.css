@@ -1,0 +1,80 @@
+html, body {
+    padding: 0px;
+    margin: 0px;
+}
+
+.grid-presentacion-rows {
+    display:grid;
+    height: 220px;
+    grid-template-rows: 50% 25% 25%;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    border-bottom: 1px solid #6E767A;
+
+}
+
+.presentacion_foto img {
+    margin-top:50px;
+    border-radius: 50%;
+    height: 150px;
+    width: 150px;
+}
+
+.presentacion_nombre {
+    margin-top:60px;
+    height: 40px;
+}
+.presentacion_nombre h1{
+    color: white;
+    font-size: 15px;
+    margin-left: -15px;
+}
+
+.presentacion_carrera{
+    margin-top: 0px;
+    height: 40px;
+}
+
+.presentacion_carrera h2{
+    color: white;
+    font-size: 12px;
+    margin-left: -80px;
+
+}
+.grid-presentacion-columns{
+    background-color:black;
+    display:grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.grid-presentacion-columns {
+    border-bottom: 1px solid red;
+}
+
+.grid-presentacion-columns p {
+    color:white;
+    font-size: 12px;
+    text-align: center;
+}
+
+.contenido{
+    display:flex;
+    background-color: #D3D3D3;
+    height: 200px;
+}
+
+.certificaciones {
+    height: 40px;
+}
+
+.experiencia {
+    height: 100px;
+}
+
+footer{
+    display:flex;
+    height: 60px;
+    background-color: black;
+    color: white;
+}
