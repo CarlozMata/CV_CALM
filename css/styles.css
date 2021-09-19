@@ -84,7 +84,11 @@ html, body {
 
 footer{
     display:flex;
-    height: 60px;
+    justify-content: space-between;
+    height: 20px;
     background-color: black;
     color: white;
+    padding: 20px;
 }
+
+
