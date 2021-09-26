@@ -3,6 +3,10 @@ html, body {
     margin: 0px;
 }
 
+header {
+    background: linear-gradient(#edfbff,#88d0ff); /*Aqui combino los colores en Header*/
+}
+
 .grid-presentacion-rows {
     display:grid;
     height: 220px;
@@ -56,22 +60,38 @@ html, body {
     text-align: center;
 }
 
+/*-----------------------------------------------------------------------------*/
+
 .contenido{
-    background-color: #D3D3D3;
-    height: 400px;
+    height: 500px;
 }
 
 .grid-contenido-columns-informacionpersonal{
     display:grid;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 25% 25% 25% 25%;
     justify-content: center;
 }
 
-.grid-contenido-columns-left{
+.grid-contenido-columns-1{
     text-align: center;
     justify-content:end;
 }
 
+.grid-contenido-columns-2{
+    text-align: center;
+    justify-content:end;
+
+}
+
+.grid-contenido-columns-3 {
+    text-align:center;
+    justify-content: end;
+}
+
+.grid-contenido-columns-4 {
+    text-align: center;
+    justify-content: end;
+}
 .experiencia {
     height: 100px;
 }
