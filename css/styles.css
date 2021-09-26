@@ -165,6 +165,8 @@ footer a{
     color: white;
 }
 
-
-
-
+.footer_contactame {
+    margin:auto;
+    font-size: 15px;
+    margin-top: -5px;
+}
