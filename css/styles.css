@@ -1,10 +1,11 @@
-html, body {
+html, body, p {
     padding: 0px;
     margin: 0px;
 }
 
 header {
     background: linear-gradient(#edfbff,#88d0ff); /*Aqui combino los colores en Header*/
+
 }
 
 .grid-presentacion-rows {
@@ -51,7 +52,7 @@ header {
 }
 
 .grid-presentacion-columns {
-    border-bottom: 1px solid red;
+    border-bottom: 1px solid #6E767A;
 }
 
 .grid-presentacion-columns p {
@@ -60,10 +61,11 @@ header {
     text-align: center;
 }
 
-/*-----------------------------------------------------------------------------*/
+/*---------------------------------Contenido--------------------------------------------*/
 
 .contenido{
-    height: 500px;
+    height: auto;
+    border-bottom: 1px solid #6E767A;
 }
 
 .grid-contenido-columns-informacionpersonal{
@@ -78,8 +80,8 @@ header {
 }
 
 .grid-contenido-columns-2{
-    text-align: center;
-    justify-content:end;
+    text-align:initial;
+    justify-content:center;
 
 }
 
@@ -89,26 +91,49 @@ header {
 }
 
 .grid-contenido-columns-4 {
-    text-align: center;
+    text-align:initial;
     justify-content: end;
 }
+
+/*---------------------------------Conocimientos y Habilidades--------------------------------------------*/
+
+.conocimientos_y_habilidades {
+    border-bottom: 1px solid #6e767a;
+    padding: 10px;
+}
+
+/*---------------------------------Experiencia--------------------------------------------*/
+
 .experiencia {
-    height: 100px;
+    border-bottom: 1px solid #6e767a;
+    padding: 10px;
 }
 
+/*---------------------------------Certificados--------------------------------------------*/
 .certificaciones {
-    height: 40px;
+    border-bottom: 1px solid #6e767a;
+    padding: 10px;
 }
 
+/*---------------------------------Proyectos--------------------------------------------*/
+
+.proyectos {
+    border-bottom: 1px solid #6E767A;
+    padding: 10px;
+}
+
+/*---------------------------------Footer--------------------------------------------*/
 
 
 footer{
     display:flex;
     justify-content: space-between;
-    height: 20px;
+    align-items: center;
+    height: 10px;
+    font-size: 12px;
     background-color: black;
     color: white;
-    padding: 20px;
+    padding: 15px;
 }
 
 
