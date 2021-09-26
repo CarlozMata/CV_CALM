@@ -109,6 +109,16 @@ header {
     padding: 10px;
 }
 
+.experiencia h3{
+    margin-top: 30px;
+    padding: 0px;
+}
+
+.experiencia h4, h5, h6 {
+    margin: 3px;
+    margin-left: 10px;
+}
+
 /*---------------------------------Certificados--------------------------------------------*/
 .certificaciones {
     border-bottom: 1px solid #6e767a;
