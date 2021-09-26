@@ -1,11 +1,10 @@
-html, body, p {
+html, body, p, h2 {
     padding: 0px;
     margin: 0px;
 }
 
 header {
     background: linear-gradient(#edfbff,#88d0ff); /*Aqui combino los colores en Header*/
-
 }
 
 .grid-presentacion-rows {
@@ -37,6 +36,7 @@ header {
 
 .presentacion_carrera{
     height: 40px;
+    margin-top: 10px;
 }
 
 .presentacion_carrera h2{
@@ -68,8 +68,19 @@ header {
     border-bottom: 1px solid #6E767A;
 }
 
+.contenido h2{
+    margin: 30px;
+    margin-left: 10px;
+}
+
+.contenido p{
+    align-items: center;
+    margin-top: -5px;
+}
+
 .grid-contenido-columns-informacionpersonal{
     display:grid;
+    height: auto;
     grid-template-columns: 25% 25% 25% 25%;
     justify-content: center;
 }
@@ -124,6 +135,10 @@ header {
     border-bottom: 1px solid #6e767a;
     padding: 10px;
 }
+.certificaciones h3 {
+    margin: 30px;
+    margin-left: 10px;
+}
 
 /*---------------------------------Proyectos--------------------------------------------*/
 
@@ -145,5 +160,11 @@ footer{
     color: white;
     padding: 15px;
 }
+
+footer a{
+    color: white;
+}
+
+
 
 
