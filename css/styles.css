@@ -45,6 +45,28 @@ header {
     margin-left: -80px;
 
 }
+.lista-presentacion {
+    display: flex;
+    background-color: black;
+}
+.lista-presentacion ul li {
+    display: inline-block;
+    text-decoration: none;
+    list-style: none;
+
+}
+
+.lista-presentacion  ul {
+    display_:center;
+    justify-content: center;
+}
+
+.lista-presentacion a{
+    color:white;
+    
+}
+
+/* Esto lo reemplace por la clase "lista-presentacion"
 .grid-presentacion-columns{
     background-color:black;
     display:grid;
@@ -60,7 +82,7 @@ header {
     font-size: 12px;
     text-align: center;
 }
-
+*/
 /*---------------------------------Contenido--------------------------------------------*/
 
 .contenido{
