@@ -170,3 +170,45 @@ footer a{
     font-size: 15px;
     margin-top: -5px;
 }
+
+@media screen and (max-width: 990px)
+{
+    .grid-presentacion-rows {
+        width: 100%;
+        background-color: red;
+                }
+    .grid-presentacion-columns {
+        width: 100%;
+        background-color:green;
+    }
+    .contenido {
+        width: 100%;
+        background-color: greenyellow;
+    }
+}
+@media screen and (max-width: 740px)
+{
+    .grid-presentacion-rows {
+        width: 100%;
+        background-color: :read-only;
+                }
+    .grid-presentacion-columns {
+        width: 100%;
+        background-color:green;
+    }
+    .contenido {
+        width: 100%;
+        background-color: greenyellow;
+    }
+}
+
+/*
+ME FALTA:
+
+TERMINAR DE AGREGAR MIS CERTIFICADOS Y ACOMODARLOS
+ACOMODAR DONDE VAN A IR MIS PROYECTOS
+AGREGAR ANIMACIÓN AL PRECIONAR"cONTACTAME" PARA QUE SOLBRE SALGAN MIS DATOS PERSONALES.
+AGREGAR VARIABLES 
+
+
+*/
