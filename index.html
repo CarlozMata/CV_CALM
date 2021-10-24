@@ -9,40 +9,56 @@
 </head>
 <body>
     <header>
-    <!------ Inicia el Header ------>
-    <section class="grid-presentacion-rows">
-        
-        <div class="presentacion_foto">
-            <img src="img/mifoto.jpg" alt="">
-        </div>
-        
-        <div class="presentacion_nombre">
-            <h1>Ing. Carlos Alberto López Mata</h1>
-        </div>
-        
-        <div class="presentacion_carrera">
-            <h2>Ing. Sistemas Computacionales y Tecnologias de la Información</h2>
-        </div>
+<!---aqui inicia mi nuevo header-->
+    <section class="header_inicial">
+        <section class="header_inicial_molde">
+            <div class="header_inicial_foto">
+                <img src="img/mifoto.jpg" alt="">
+            </div>
+            <div class="header_inicial_nombre">Carlos Alberto López Mata</div>
+            <div class="header_inicial_carrera">Ing. Sistemas Computacionales y Tecnologias de la Información</div>
+        </section>
     </section>
-    <section class="lista-presentacion">
-        <ul>
-            <li><a>Correo: Carlos_1992_@hotmail.com</a></li>
-            <li><a>Dirección: Mérida, Yucatán. México</a></li>
-            <li><a>Tel. 9931079507</a></li>
-        </ul>
-<!-- CORREGI ESTO Y LO CONVERTI EN LISTA ARRIBA
-    <div class="grid-presentacion-columns">
-        <div>
-            <p>Correo: Carlos_1992_@hotmail.com</p>
-        </div>
-        <div>
-            <p>Ubicación: Mérida, Yucatan.</p>
-        </div>
-        <div>
-            <p>Tel. 9931079507</p>
-        </div>-->
+
+<!------ Inicia el Header v2 ------>
+
+    <section class="header_presentacion">
+        <section class="header_presentacion_molde">
+            <div >Correo: Carlos_1992_@hotmail.com</div>
+            <div>Dirección: Mérida, Yucatán. México</div>
+            <div>Tel. 9931079507</div>
+        </section>
     </section>
+
 <!------ Comienza el Contenido ------>
+<h2>Acerca de mi</h2>
+<section class="contenido">
+        <section class="contenido_molde">
+            <div class=columna1>
+                <a>Nacionalidad:</a><br>
+                <a>Lugar de Nacimiento:</a><br>
+                <a>Linkdin:</a>
+            </div>
+            <div class=columna2>
+                <a>Mexicano</a><br>
+                <a>Villahermosa, Tabasco</a><br>
+                <a href="https://www.linkedin.com/in/carlos-mata-14895b14a/"target="blank">https://www.linkedin.com/CarlozMata</a>
+            </div>
+            <div class=columna3>
+                <a>Educación:</a><br>
+                <a>Universidad:</a><br>
+                <a>GitHub:</a>
+            </div>
+            <div class=columna4>
+                <a>Estudios Concluidos (2013-2016)</a><br>
+                <a>Instituto de Estudios Universitarios IEU</a><br>
+                <a href="https://github.com/Carlozmata92" target="blank">https://github.com/CarlozMata92</a>
+            </div>
+        </section>
+    </section>
+
+
+<!--- BORRAR ESTE CONTENIDO
 <section class="contenido">
     <h2>Acerca de mi</h2>
     <div class="grid-contenido-columns-informacionpersonal">
@@ -74,7 +90,7 @@
         </div>
     </div>
 </section>
-
+--->
 <!------ Comienza Conocimientos y Habilidades ------>
 
 <section class="conocimientos_y_habilidades">
@@ -389,8 +405,8 @@
     </header>
 <footer>
     <div class="terminosycondiciones">Terminos y condiciones</div>
-    <a class="footer_contactame" href=""><b>¡Contactame!<b><a>
-    <div class="correo"><a href="mailto:carlos_1992_hotmail.com">carlos_1992_@hotmail.com</a></div>
+    <a class="footer_contactame" id="contactame" href=""><b>¡Contactame!<b><a>
+    <div class="correo" ><a href="mailto:carlos_1992_hotmail.com">carlos_1992_@hotmail.com</a></div>
  </footer>
 <!------ Finaliza Footer ------>
 </body>

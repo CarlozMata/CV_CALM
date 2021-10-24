@@ -1,131 +1,86 @@
-html, body, p, h2 {
+html, body, p, h2{
     padding: 0px;
     margin: 0px;
+}
+
+h2 {
+    font-size: 20px;
+    margin-top: 1%;
+    text-align: center;
 }
 
 header {
     background: linear-gradient(#edfbff,#88d0ff); /*Aqui combino los colores en Header*/
 }
 
-.grid-presentacion-rows {
-    display:grid;
-    height: 220px;
-    grid-template-rows: 50% 25% 25%;
-    align-items: center;
-    justify-content: center;
-    background-color: black;
-    border-bottom: 1px solid #6E767A;
-}
-
-.presentacion_foto img {
-    margin-top:50px;
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-}
-
-.presentacion_nombre {
-    margin-top:60px;
-    height: 40px;
-}
-.presentacion_nombre h1{
-    color: white;
-    font-size: 15px;
-    margin-left: -15px;
-}
-
-.presentacion_carrera{
-    height: 40px;
-    margin-top: 10px;
-}
-
-.presentacion_carrera h2{
-    color: white;
-    font-size: 12px;
-    margin-left: -80px;
-
-}
-.lista-presentacion {
+.header_inicial {
     display: flex;
-    background-color: black;
-}
-.lista-presentacion ul li {
-    display: inline-block;
-    text-decoration: none;
-    list-style: none;
-
-}
-
-.lista-presentacion  ul {
-    display_:center;
+    height: 175px;
     justify-content: center;
-}
+    background-color: black;
+    align-items: center;
+    border-bottom: 1px solid #6e767a;
 
-.lista-presentacion a{
-    color:white;
-    
 }
-
-/* Esto lo reemplace por la clase "lista-presentacion"
-.grid-presentacion-columns{
-    background-color:black;
-    display:grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-}
-
-.grid-presentacion-columns {
-    border-bottom: 1px solid #6E767A;
-}
-
-.grid-presentacion-columns p {
-    color:white;
-    font-size: 12px;
+.header_inicial_molde {
     text-align: center;
 }
-*/
+.header_inicial_molde div {
+    color: white;
+    font-size: 14px;
+}
+.header_inicial_foto img {
+    height:120px;
+    width:120px;
+    border-radius: 50%;    
+}
+
+/*Header v2*/
+
+.header_presentacion {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-bottom: 1px solid #6E767A;
+    background-color: black;
+}
+
+.header_presentacion_molde {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    height: 30px;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_presentacion_molde div {
+    color:white;
+    font-size: 12px;
+    width: 33%;
+    text-align: center;
+}
+
 /*---------------------------------Contenido--------------------------------------------*/
 
 .contenido{
-    height: auto;
+    display: flex;
+    flex-direction: column;
     border-bottom: 1px solid #6E767A;
+    height: 90px;
+    justify-content: space-evenly;
+    align-items: center;    
 }
-
-.contenido h2{
-    margin: 30px;
-    margin-left: 10px;
-}
-
-.contenido p{
-    align-items: center;
-    margin-top: -5px;
-}
-
-.grid-contenido-columns-informacionpersonal{
-    display:grid;
-    height: auto;
-    grid-template-columns: 25% 25% 25% 25%;
-    justify-content: center;
-}
-
-.grid-contenido-columns-1{
+.contenido_molde{
+    display: flex;
+    width: 70%;    
+    height: 85%;
     text-align: center;
-    justify-content:end;
+    align-items: center;
 }
-
-.grid-contenido-columns-2{
-    text-align:initial;
-    justify-content:center;
-
-}
-
-.grid-contenido-columns-3 {
-    text-align:center;
-    justify-content: end;
-}
-
-.grid-contenido-columns-4 {
-    text-align:initial;
-    justify-content: end;
+.contenido_molde div {
+    width: 25%;
 }
 
 /*---------------------------------Conocimientos y Habilidades--------------------------------------------*/
@@ -191,6 +146,10 @@ footer a{
     margin:auto;
     font-size: 15px;
     margin-top: -5px;
+}
+
+#contactame {
+    scroll-behavior:smooth;
 }
 
 @media (min-width: 800px) and (max-width: 940px)
