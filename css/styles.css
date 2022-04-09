@@ -15,6 +15,7 @@ header {
 }
 .presentation-g {
     background-color: aqua;
+    width: 90%;
 }
 .presentation-box1 {
     margin-top: 6%;
@@ -32,17 +33,31 @@ header {
     background-color: yellowgreen;
     text-align: center;
 }
-.presentation-box3 {
+.presentation-box3-g{
     background-color: red;
-    display: flex;
-    width: 50%;
-    justify-items: center;
-    justify-content: center;
+    width: 100%;
+}
+.presentation-box3{
+    display:flex;
+    background-color: violet;
+    width: 70%;
+    margin-left:15%;
+    justify-content: space-evenly;
+    
 }
 .presentation-box3 img {
-    width: 4%;
-    height: 4%;
+    width: 5%;
+    height: 5%;
 }
+
+.about {
+    background-color: saddlebrown;
+    height: 500px;
+    width: 100%;
+}
+
+
+
 /*
 html, body {
     padding: 0px;
