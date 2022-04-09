@@ -5,6 +5,7 @@ body {
 
 header {
     background-color:darkgray;
+    height: 150px;
 }
 .presentation {
     display: flex;
@@ -16,6 +17,8 @@ header {
 .presentation-g {
     background-color: aqua;
     width: 90%;
+    border: 2px solid black;
+
 }
 .presentation-box1 {
     margin-top: 6%;
@@ -24,14 +27,15 @@ header {
     background-color:black;
 }
 .presentation-box1 img {
-    width: 20%;
-    height: 20%;
+    width: 150px;
+    height: 150%;
     border: 5px solid white;
 }
 .presentation-box2 {
     margin-top: 2%;
     background-color: yellowgreen;
     text-align: center;
+    color: white;
 }
 .presentation-box3-g{
     background-color: red;
@@ -46,8 +50,8 @@ header {
     
 }
 .presentation-box3 img {
-    width: 5%;
-    height: 5%;
+    width: 50px;
+    height: 50px;
 }
 
 .about {
