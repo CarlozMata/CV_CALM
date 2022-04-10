@@ -3,11 +3,47 @@ body {
     padding: 0;
 }
 
-header {
+/*NAV*/
+.nav {
+    display: flex;
     background-color:darkgray;
-    height: 150px;
+    width: 100%;
+    height: 100px;
+    justify-content: center;
 }
-section > *:hover {
+.nav-g {
+    
+    display: flex;
+    background-color: tomato;
+    width: 90%;
+    max-width: 1200px;
+    justify-content: center;
+}
+.nav-g ul {
+    display: flex;
+    gap: 5px;
+    height: 30px;
+}
+.nav-g ul > :nth-child(1){
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 1px;
+    
+}
+.nav-g li {
+    list-style: none;
+}
+.nav-g ul > :hover {
+    background-color: greenyellow;
+}
+.nav li::after {
+    content: "|";
+}
+
+
+
+/*SECTION PRESENTATION*/
+.presentation > :nth-child(1):hover {
     background-color: springgreen;
 }
 .presentation {
@@ -22,7 +58,6 @@ section > *:hover {
     width: 90%;
     max-width: 1200px;
     border: 2px solid black;
-
 }
 .presentation-box1 {
     margin-top: 6%;
@@ -42,7 +77,6 @@ section > *:hover {
     color: white;
 }
 .presentation-box3-g{
-    display: block;
     background-color: red;
     width: 100%;
 }
@@ -58,13 +92,73 @@ section > *:hover {
     width: 50px;
     height: 50px;
 }
-
-.about {
-    background-color: saddlebrown;
-    height: 500px;
+.presentation-box4 {
+    margin-top: 2%;
+    background-color: blue;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
 }
+.presentation-box4 p {
+    border: 1px solid black;
+    background-color: white;
+    padding: 6px;
+}
+.presentation-box4 p:hover {
+    background-color: grey;
+}
+/*SECTION ABOUT*/
+.about {
+    display: flex;
+    width: 100%;
+    height: 350px;
+    background-color:orange;
+    justify-content: center;
+}
+.about-g {
+    margin-top: 50px;
+    width: 90%;
+    max-width: 1200px;
+    background-color: tomato;
+    display: flex;
+    border: 2px solid black;
+}
+.about-box1 {
+    width: 55%;
+    background-color: gold;
+}
+.about-box1 > * {
+    margin-left: 15px;
+}
+.about-box2 {
+    background-color: goldenrod;    
+    width: 15%;
+}
+.about-box2 img {
+    width: 20px;
+    height: 20px;
+}
+.about-box2 li {
+    height: 25px;
+}
+.about-box2 ul {
+    list-style:none;
+    padding: 5px;
+}
+.about-box3 {
+    width: 30%;
+    background-color: yellow;
+}
+.about-box3 li {
+    height: 25px;
 
+}
+.about-box3 ul {
+    list-style: none;
+    padding: 0;
+/*    overflow-wrap: break-word;*/
+}
 
 
 /*
