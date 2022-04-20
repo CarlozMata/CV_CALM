@@ -12,13 +12,13 @@ body {
     justify-content: center;
 }
 .nav-g {
-    
     display: flex;
     background-color: tomato;
     width: 90%;
     max-width: 1200px;
     justify-content: center;
 }
+
 .nav-g ul {
     display: flex;
     gap: 5px;
@@ -50,11 +50,11 @@ body {
     display: flex;
     width: 100%;
     height: 500px;
-    background-color: yellow;
+/*    background-color: yellow;*/
     justify-content: center;
 }
 .presentation-g {
-    background-color: aqua;
+    background-color: gray;
     width: 90%;
     max-width: 1200px;
     border: 2px solid black;
@@ -63,7 +63,7 @@ body {
     margin-top: 6%;
     display: flex;
     justify-content: center;
-    background-color:black;
+/*    background-color:black;*/
 }
 .presentation-box1 img {
     width: 150px;
@@ -72,17 +72,17 @@ body {
 }
 .presentation-box2 {
     margin-top: 2%;
-    background-color: yellowgreen;
+/*    background-color: yellowgreen;*/
     text-align: center;
     color: white;
 }
 .presentation-box3-g{
-    background-color: red;
+/*    background-color: red;*/
     width: 100%;
 }
 .presentation-box3{
     display:flex;
-    background-color: violet;
+/*    background-color: violet;*/
     width: 70%;
     margin: 0 auto; /*Centrar elementos*/
     justify-content: center;    
@@ -94,7 +94,7 @@ body {
 }
 .presentation-box4 {
     margin-top: 2%;
-    background-color: blue;
+/*    background-color: blue;*/
     width: 100%;
     display: flex;
     justify-content: center;
@@ -108,6 +108,8 @@ body {
 .presentation-box4 p:hover {
     background-color: grey;
 }
+
+
 /*SECTION ABOUT*/
 .about {
     display: flex;
@@ -161,85 +163,60 @@ body {
 }
 
 
-/*
-html, body {
-    padding: 0px;
-    margin: 0px;
-}
-
-.grid-presentacion-rows {
-    display:grid;
-    height: 220px;
-    grid-template-rows: 50% 25% 25%;
-    align-items: center;
+/*SECTION SKILLS*/
+.skills {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color: wheat;
     justify-content: center;
-    background-color: black;
-    border-bottom: 1px solid #6E767A;
-
+}
+/*SECTION EXPERIENCE*/
+.experience {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color:aqua;
+    justify-content: center;
+}
+/*SECTION EDUCATION*/
+.education {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color:blue;
+    justify-content: center;
+}
+/*SECTION PORTFOLIO*/
+.portfolio{
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color:yellowgreen;
+    justify-content: center;
+}
+/*SECTION CERTIFICATIONS*/
+.certifications {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color:violet;
+    justify-content: center;
+}
+/*SECTION CONTACT*/
+.contact {
+    display: flex;
+    width: 100%;
+    height: 500px;
+    background-color:chocolate;
+    justify-content: center;
 }
 
-.presentacion_foto img {
-    margin-top:50px;
-    border-radius: 50%;
-    height: 150px;
-    width: 150px;
-}
-
-.presentacion_nombre {
-    margin-top:60px;
-    height: 40px;
-}
-.presentacion_nombre h1{
-    color: white;
-    font-size: 15px;
-    margin-left: -15px;
-}
-
-.presentacion_carrera{
-    margin-top: 0px;
-    height: 40px;
-}
-
-.presentacion_carrera h2{
-    color: white;
-    font-size: 12px;
-    margin-left: -80px;
-
-}
-.grid-presentacion-columns{
-    background-color:black;
-    display:grid;
-    grid-template-columns: 33.33% 33.33% 33.33%;
-}
-
-.grid-presentacion-columns {
-    border-bottom: 1px solid red;
-}
-
-.grid-presentacion-columns p {
-    color:white;
-    font-size: 12px;
-    text-align: center;
-}
-
-.contenido{
-    display:flex;
-    background-color: #D3D3D3;
-    height: 200px;
-}
-
-.certificaciones {
-    height: 40px;
-}
-
-.experiencia {
+/*FOOTER*/
+footer {
+    display: flex;
+    width: 100%;
     height: 100px;
+    background-color: grey;
+    justify-content: center;
 }
-
-footer{
-    display:flex;
-    height: 60px;
-    background-color: black;
-    color: white;
-}
-*/
