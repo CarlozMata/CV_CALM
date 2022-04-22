@@ -1,43 +1,53 @@
+/*
+EL PAPEL TAPIZ:
+https://www.wallpaperbetter.com/es/hd-wallpaper-zrezp/download/1280x800
+*/
 body {
     margin: 0;
     padding: 0;
-    background: linear-gradient(rgba(2, 1, 1, 0.712),#33325a);
+    background-image: url("../img/wallpaper4.jpg");
+    background-position:top;
+    background-size:contain;
+    color:white; /*ELIMINAR CUANDO CONCLUYA*/
 }
 
 /*NAV*/
 .nav {
     display: flex;
-    background-color:darkgray;
+/*    background-color:darkgray;*/
     width: 100%;
     height: 100px;
     justify-content: center;
 }
-.nav-g {
+.nav-left {
+    display: flex;    
+    font-size: 21px;
+    font-weight: bold;
+    margin-left: 5%;
+}
+.nav-left li {
+    list-style: none;
+}
+.nav-right {
     display: flex;
-    background-color: tomato;
-    width: 90%;
+    width: 80%;
     max-width: 1200px;
     justify-content: center;
 }
 
-.nav-g ul {
+.nav-right ul {
     display: flex;
     gap: 5px;
     height: 30px;
+    color:white
 }
-.nav-g ul > :nth-child(1){
-    font-size: 21px;
-    font-weight: bold;
-    margin-left: 1px;
-    
-}
-.nav-g li {
+.nav-right li {
     list-style: none;
 }
-.nav-g ul > :hover {
-    background-color: greenyellow;
+.nav-right ul > :hover {
+    background-color:rgb(16, 193, 216);
 }
-.nav li::after {
+.nav-right li::after {
     content: "|";
 }
 
@@ -54,11 +64,19 @@ body {
 /*    background-color: yellow;*/
     justify-content: center;
 }
+
 .presentation-g {
-    background-color: gray;
-    width: 90%;
+    width: 80%;
     max-width: 1200px;
     border: 2px solid black;
+}
+.presentation-g {
+    background-image: url("../img/wallpaper2.jpg");
+    background-size: cover;
+    background-attachment:scroll;
+}
+.presentation-g:hover {
+    cursor: help;
 }
 .presentation-box1 {
     margin-top: 6%;
@@ -70,6 +88,7 @@ body {
     width: 150px;
     height: 150%;
     border: 5px solid white;
+    border-radius: 50%;
 }
 .presentation-box2 {
     margin-top: 2%;
@@ -91,7 +110,11 @@ body {
 }
 .presentation-box3 img {
     width: 25px;
-    height: 25px;
+    height: 25px;   
+}
+.presentation-box3 img:hover {
+    background-color: white;
+    cursor: pointer;
 }
 .presentation-box4 {
     margin-top: 2%;
@@ -101,13 +124,14 @@ body {
     justify-content: center;
     gap: 10px;
 }
-.presentation-box4 p {
+.presentation-box4 button {
     border: 1px solid black;
     background-color: white;
     padding: 6px;
 }
-.presentation-box4 p:hover {
+.presentation-box4 button:hover {
     background-color: grey;
+    cursor: pointer;
 }
 
 
@@ -121,15 +145,17 @@ body {
 }
 .about-g {
     margin-top: 50px;
-    width: 90%;
+    width: 80%;
     max-width: 1200px;
-    background-color: tomato;
+    background-color: black;
     display: flex;
     border: 2px solid black;
+    color: aliceblue;
+    background-image: url("../img/wallpaper2.jpg");
+
 }
 .about-box1 {
     width: 55%;
-    background-color: gold;
 }
 .about-box1 > * {
     margin-left: 15px;
@@ -149,18 +175,24 @@ body {
     list-style:none;
     padding: 5px;
 }
+.about-box2 a {
+    color: white;
+}
 .about-box3 {
     width: 30%;
-    background-color: yellow;
 }
 .about-box3 li {
     height: 25px;
-
+    color:white;
 }
 .about-box3 ul {
     list-style: none;
     padding: 0;
 /*    overflow-wrap: break-word;*/
+}
+.about-box3 a {
+    list-style: none;
+    color: white;
 }
 
 
@@ -169,9 +201,31 @@ body {
     display: flex;
     width: 100%;
     height: 500px;
-/*    background-color: wheat;*/
     justify-content: center;
 }
+.skills-g {
+    background-image: url("../img/wallpaper2.jpg");
+    width: 80%;
+    max-width: 1200px;
+    border: 2px solid black;
+    margin-top: 6%;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /*SECTION EXPERIENCE*/
 .experience {
     display: flex;
@@ -180,6 +234,14 @@ body {
 /*    background-color:aqua;*/
     justify-content: center;
 }
+.experience-g {
+        background-image: url("../img/wallpaper2.jpg");
+        width: 80%;
+        max-width: 1200px;
+        border: 2px solid black;
+        margin-top: 6%;
+    
+    }
 /*SECTION EDUCATION*/
 .education {
     display: flex;
@@ -188,6 +250,15 @@ body {
 /*    background-color:blue;*/
     justify-content: center;
 }
+.education-g  {
+    background-image: url("../img/wallpaper2.jpg");
+    width: 80%;
+    max-width: 1200px;
+    border: 2px solid black;
+    margin-top: 6%;
+
+}
+
 /*SECTION PORTFOLIO*/
 .portfolio{
     display: flex;
@@ -196,6 +267,14 @@ body {
 /*    background-color:yellowgreen;*/
     justify-content: center;
 }
+.portfolio-g  {
+    background-image: url("../img/wallpaper2.jpg");
+    width: 80%;
+    max-width: 1200px;
+    border: 2px solid black;
+    margin-top: 6%;
+}
+
 /*SECTION CERTIFICATIONS*/
 .certifications {
     display: flex;
@@ -203,6 +282,33 @@ body {
     height: 500px;
 /*    background-color:violet;*/
     justify-content: center;
+}
+.certifications-g  {
+    background-image: url("../img/wallpaper2.jpg");
+    width: 80%;
+    max-width: 1200px;
+    border: 2px solid black;
+    margin-top: 6%;
+
+}
+
+/*VERSION*/
+
+.version {
+    display: flex;
+    width: 100%;
+    height: 900px;
+    justify-content: center;
+}
+.version-g {
+    width: 80%;
+    max-width: 1200px;
+    border: 2px solid black;
+    margin-top: 6%;
+}
+.version-g img {
+    width: 100%;
+    height: 100%;
 }
 /*SECTION CONTACT*/
 .contact {
@@ -212,12 +318,20 @@ body {
 /*    background-color:chocolate;*/
     justify-content: center;
 }
+.contact-g  {
+    background-image: url("../img/wallpaper2.jpg");
+    width: 80%;
+    max-width: 1200px;
+    border: 2px solid black;
+    margin-top: 6%;
 
+}
 /*FOOTER*/
 footer {
     display: flex;
     width: 100%;
-    height: 100px;
-/*    background-color: grey;*/
+    height: 80px;
+    background-color:black;
     justify-content: center;
+    color: aliceblue;
 }
