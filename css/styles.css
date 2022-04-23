@@ -76,6 +76,7 @@ body {
     background-image: url("../img/wallpaper2.jpg");
     background-size: cover;
     background-attachment:scroll;
+    background-position: center;
 }
 .presentation-g:hover {
     cursor: help;
