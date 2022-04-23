@@ -2,9 +2,11 @@
 EL PAPEL TAPIZ:
 https://www.wallpaperbetter.com/es/hd-wallpaper-zrezp/download/1280x800
 */
-body {
+* {
     margin: 0;
     padding: 0;
+}
+body {
     background-image: url("../img/wallpaper4.jpg");
     background-position:top;
     background-size:contain;
@@ -139,7 +141,7 @@ body {
 .about {
     display: flex;
     width: 100%;
-    height: 350px;
+    min-height: 350px;
 /*    background-color:orange;*/
     justify-content: center;
 }
@@ -152,13 +154,10 @@ body {
     border: 2px solid black;
     color: aliceblue;
     background-image: url("../img/wallpaper2.jpg");
-
+    padding: 8px;
 }
 .about-box1 {
     width: 55%;
-}
-.about-box1 > * {
-    margin-left: 15px;
 }
 .about-box2 {
 /*    background-color: goldenrod;    */
@@ -193,6 +192,9 @@ body {
 .about-box3 a {
     list-style: none;
     color: white;
+}
+.email {
+    word-break: break-all;
 }
 
 
@@ -334,4 +336,16 @@ footer {
     background-color:black;
     justify-content: center;
     color: aliceblue;
+}
+
+
+/*MEDIAQUERIES*/
+@media only screen and (max-width: 800px)
+{
+.about-g > * {
+    width:100%;
+    }
+.about-g {
+     flex-direction: column;
+ }
 }
