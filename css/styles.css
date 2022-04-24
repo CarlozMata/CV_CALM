@@ -53,7 +53,17 @@ body {
     content: "|";
 }
 
-
+/*MI BOX*/
+.box {
+    margin-top: 50px;
+    width: 80%;
+    max-width: 1200px;
+    background-color: black;
+    border: 2px solid black;
+    color: aliceblue;
+    background-image: url("../img/wallpaper2.jpg");
+    padding: 8px;
+}
 
 /*SECTION PRESENTATION*/
 .presentation > :nth-child(1):hover {
@@ -67,22 +77,10 @@ body {
     justify-content: center;
 }
 
-.presentation-g {
-    width: 80%;
-    max-width: 1200px;
-    border: 2px solid black;
-}
-.presentation-g {
-    background-image: url("../img/wallpaper2.jpg");
-    background-size: cover;
-    background-attachment:scroll;
-    background-position: center;
-}
-.presentation-g:hover {
+.box:hover {
     cursor: help;
 }
 .presentation-box1 {
-    margin-top: 6%;
     display: flex;
     justify-content: center;
 /*    background-color:black;*/
@@ -146,17 +144,6 @@ body {
 /*    background-color:orange;*/
     justify-content: center;
 }
-.about-g {
-    margin-top: 50px;
-    width: 80%;
-    max-width: 1200px;
-    background-color: black;
-    display: flex;
-    border: 2px solid black;
-    color: aliceblue;
-    background-image: url("../img/wallpaper2.jpg");
-    padding: 8px;
-}
 .about-box1 {
     width: 55%;
 }
@@ -206,14 +193,6 @@ body {
     height: 500px;
     justify-content: center;
 }
-.skills-g {
-    background-image: url("../img/wallpaper2.jpg");
-    width: 80%;
-    max-width: 1200px;
-    border: 2px solid black;
-    margin-top: 6%;
-
-}
 
 
 
@@ -237,14 +216,6 @@ body {
 /*    background-color:aqua;*/
     justify-content: center;
 }
-.experience-g {
-        background-image: url("../img/wallpaper2.jpg");
-        width: 80%;
-        max-width: 1200px;
-        border: 2px solid black;
-        margin-top: 6%;
-    
-    }
 /*SECTION EDUCATION*/
 .education {
     display: flex;
@@ -252,14 +223,6 @@ body {
     height: 500px;
 /*    background-color:blue;*/
     justify-content: center;
-}
-.education-g  {
-    background-image: url("../img/wallpaper2.jpg");
-    width: 80%;
-    max-width: 1200px;
-    border: 2px solid black;
-    margin-top: 6%;
-
 }
 
 /*SECTION PORTFOLIO*/
@@ -270,13 +233,6 @@ body {
 /*    background-color:yellowgreen;*/
     justify-content: center;
 }
-.portfolio-g  {
-    background-image: url("../img/wallpaper2.jpg");
-    width: 80%;
-    max-width: 1200px;
-    border: 2px solid black;
-    margin-top: 6%;
-}
 
 /*SECTION CERTIFICATIONS*/
 .certifications {
@@ -286,15 +242,6 @@ body {
 /*    background-color:violet;*/
     justify-content: center;
 }
-.certifications-g  {
-    background-image: url("../img/wallpaper2.jpg");
-    width: 80%;
-    max-width: 1200px;
-    border: 2px solid black;
-    margin-top: 6%;
-
-}
-
 /*VERSION*/
 
 .version {
@@ -302,12 +249,6 @@ body {
     width: 100%;
     height: 900px;
     justify-content: center;
-}
-.version-g {
-    width: 80%;
-    max-width: 1200px;
-    border: 2px solid black;
-    margin-top: 6%;
 }
 .version-g img {
     width: 100%;
@@ -320,14 +261,6 @@ body {
     height: 500px;
 /*    background-color:chocolate;*/
     justify-content: center;
-}
-.contact-g  {
-    background-image: url("../img/wallpaper2.jpg");
-    width: 80%;
-    max-width: 1200px;
-    border: 2px solid black;
-    margin-top: 6%;
-
 }
 /*FOOTER*/
 footer {
@@ -343,7 +276,7 @@ footer {
 /*MEDIAQUERIES*/
 @media only screen and (max-width: 800px)
 {
-.about-g > * {
+.box > * {
     width:100%;
     }
 .about-g {
