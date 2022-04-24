@@ -10,7 +10,6 @@ body {
     background-image: url("../img/wallpaper4.jpg");
     background-position:top;
     background-size:contain;
-    color:white; /*ELIMINAR CUANDO CONCLUYA*/
 }
 
 /*NAV*/
@@ -95,7 +94,6 @@ padding: 8px;
     margin-top: 2%;
 /*    background-color: yellowgreen;*/
     text-align: center;
-    color: white;
     padding: 15px;
 }
 .presentation-box3-g{
@@ -164,7 +162,6 @@ padding: 8px;
     padding: 5px;
 }
 .about-box2 a {
-    color: white;
 }
 .about-box3 {
     width: 30%;
