@@ -76,7 +76,7 @@ padding: 8px;
     justify-content: center;
 }
 
-.box:hover {
+.presentation:hover {
     cursor: help;
 }
 .presentation-box1 {
