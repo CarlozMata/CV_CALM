@@ -12,38 +12,65 @@ body {
     background-size:contain;
 }
 
+.box {
+    margin-top: 50px;
+    width: 80%;
+    max-width: 1200px;
+    background-color: black;
+    border: 2px solid black;
+    color: aliceblue;
+    background-image: url("../img/wallpaper2.jpg");
+    padding: 8px;
+    }
+
 /*NAV*/
 .nav {
-    display: flex;
 /*    background-color:darkgray;*/
+display: flex;
     width: 100%;
     height: 100px;
     justify-content: center;
+    }
+.nav > .box:nth-child(1) {
+    background-image: none;
+    width: 80%;
+    max-width: 1200px;
+    display: flex;
+    padding: 0;
+    background-color:transparent;
+    border: 0px none;
+}
+.table-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
 .nav-left {
-    display: flex;    
     font-size: 21px;
     font-weight: bold;
-    margin-left: 5%;
+    color:aliceblue;
+    display: block;
 }
 .nav-left li {
     list-style: none;
+    display: block;
+}
+.nav-left ul {
+    display:block;
 }
 .nav-right {
-    display: flex;
-    width: 80%;
-    max-width: 1200px;
-    justify-content: center;
+    overflow-wrap: break-word;
+
 }
 
 .nav-right ul {
-    display: flex;
-    gap: 5px;
-    height: 30px;
-    color:white
+    color:white;    
+    display:flex;
+    min-width: 200px;
+    overflow-wrap: break-word;
 }
 .nav-right li {
     list-style: none;
+    overflow-wrap: break-word;
 }
 .nav-right ul > :hover {
     background-color:rgb(16, 193, 216);
@@ -52,16 +79,6 @@ body {
     content: "|";
 }
 
-.box {
-margin-top: 50px;
-width: 80%;
-max-width: 1200px;
-background-color: black;
-border: 2px solid black;
-color: aliceblue;
-background-image: url("../img/wallpaper2.jpg");
-padding: 8px;
-}
 
 /*SECTION PRESENTATION*/
 .presentation > :nth-child(1):hover {
@@ -87,9 +104,10 @@ padding: 8px;
 .presentation-box1 img {
     width: 150px;
     height: 150%;
-    border: 5px solid white;
+    border: 5px solid aliceblue;
     border-radius: 50%;
 }
+
 .presentation-box2 {
     margin-top: 2%;
 /*    background-color: yellowgreen;*/
@@ -161,14 +179,11 @@ padding: 8px;
     list-style:none;
     padding: 5px;
 }
-.about-box2 a {
-}
 .about-box3 {
     width: 30%;
 }
 .about-box3 li {
     height: 25px;
-    color:white;
 }
 .about-box3 ul {
     list-style: none;
@@ -271,15 +286,17 @@ footer {
 
 
 /*MEDIAQUERIES*/
+/*
 @media only screen and (max-width: 800px)
 {
 .box > * {
-    width:100%;
+    width: 100%;
     }
 .box {
      flex-direction: column;
  }
 }
+*/
 /*
 ME FALTA:
 
