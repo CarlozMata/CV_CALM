@@ -234,10 +234,7 @@ padding: 8px;
 /*    background-color:yellowgreen;*/
     justify-content: center;
 }
-<<<<<<< HEAD
 
-=======
->>>>>>> development
 /*SECTION CERTIFICATIONS*/
 .certifications {
     display: flex;
@@ -246,8 +243,6 @@ padding: 8px;
 /*    background-color:violet;*/
     justify-content: center;
 }
-<<<<<<< HEAD
-=======
 
 >>>>>>> development
 /*VERSION*/
@@ -258,11 +253,7 @@ padding: 8px;
     height: 900px;
     justify-content: center;
 }
-<<<<<<< HEAD
-.version-g img {
-=======
 .version1 {
->>>>>>> development
     width: 100%;
     height: 100%;
 }
