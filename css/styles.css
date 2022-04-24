@@ -97,7 +97,6 @@ padding: 8px;
     color: white;
     padding: 15px;
 }
-<<<<<<< HEAD
 .presentation-box3-g{
 /*    background-color: red;*/
     width: 100%;
@@ -244,9 +243,6 @@ padding: 8px;
     justify-content: center;
 }
 
->>>>>>> development
-/*VERSION*/
-
 .version {
     display: flex;
     width: 100%;
@@ -286,60 +282,7 @@ footer {
      flex-direction: column;
  }
 }
-=======
-
-footer a{
-    color: white;
-}
-
-.footer_contactame {
-    margin:auto;
-    font-size: 15px;
-    margin-top: -5px;
-}
-
-#contactame {
-    scroll-behavior:smooth;
-}
-
-@media (min-width: 800px) and (max-width: 940px)
-{
-    .grid-presentacion-rows {
-        width: 110%;
- /*       background-color: red;*/
-                }
-    .grid-presentacion-columns {
-        width: 100%;
-/*        background-color:green;*/
-    }
-    .contenido {
-        width: 100%;
-/*        background-color: greenyellow;*/
-    }
-}
-@media screen and (max-width: 540px)
-{
-    .grid-contenido-columns-1 {
-        width:100%;
-/*        background-color:midnightblue;*/
-                }
-    .grid-contenido-columns-2 {
-        width: 90%;
-/*        background-color:navajowhite;*/
-    }
-    .grid-contenido-columns-3 {
-        width: 100%;
-/*        background-color:olive;*/
-    }
-    .grid-contenido-columns-4 {
-        width: 100%;
-/*        background-color:mediumturquoise;*/
-    }
-}
-
 /*
-
-
 ME FALTA:
 
 TERMINAR DE AGREGAR MIS CERTIFICADOS Y ACOMODARLOS
