@@ -1,6 +1,7 @@
 /*
 EL PAPEL TAPIZ:
 https://www.wallpaperbetter.com/es/hd-wallpaper-zrezp/download/1280x800
+https://www.wallpaperbetter.com/es/hd-wallpaper-emuax
 */
 * {
     margin: 0;
@@ -59,7 +60,6 @@ display: flex;
 }
 .nav-right {
     overflow-wrap: break-word;
-
 }
 
 .nav-right ul {
@@ -295,6 +295,12 @@ footer {
 .box {
      flex-direction: column;
  }
+}
+@media (max-width: 375px)
+{
+.box {
+  display: inherit; /*Pasa de horizontal a vertical
+  height: auto;
 }
 */
 /*
