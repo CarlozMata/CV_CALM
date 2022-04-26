@@ -6,11 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <title>CV Carlos Mata</title>
+    <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+    <script src="./main.js"></script>
 </head>
-<body>
+<body id="invoice">
 <nav class="nav">
 <div class="box">
-    <div class="table-container">
+    <div class="table-container-1">
     <div class="nav-left">
     <ul>
         <li>Carlos Mata</li>
@@ -18,15 +20,15 @@
     </div>
     <div class="nav-right">
     <ul>
-        <li>Presentation</li>
-        <li>About</li>
-        <li>Skills</li>
-        <li>Experience</li>
-        <li>Education</li>
-        <li>Portfolio</li>
-        <li>Certifications</li>
-        <li>Version</li>
-        <li>Contact</li>
+        <li>Presentación</li>
+        <li>Acerca de mi</li>
+        <li>Habilidades</li>
+        <li>Experiencia</li>
+        <li>Educación</li>
+        <li>Portafolio</li>
+        <li>Certificaciones</li>
+        <li>Versiones CV</li>
+        <li>Contacto</li>
     </ul>
     </div>
 </div>
@@ -52,7 +54,7 @@
         </div>
     </div>
     <div class="presentation-box4">
-        <button>Download</button>
+        <button onclick="generatePDF()">Download</button>
         <button>Hire Me</button>
     </div>
     </div>
@@ -97,7 +99,7 @@
 
     <section class="skills">
         <div class="box">
-            <img class="version1"src="./img/underConstruction.jpg" alt="Version 1.0">
+            <img class="imgConstruction"src="./img/underConstruction.jpg" alt="Construction">
         </div>
     </section>
     
@@ -105,7 +107,7 @@
 
     <section class="experience">
         <div class="box">
-            <img class="version1"src="./img/underConstruction.jpg" alt="Version 1.0">
+            <img class="imgConstruction"src="./img/underConstruction.jpg" alt="Construction">
         </div>
     </section>
     
@@ -113,13 +115,14 @@
 
     <section class="education">
         <div class="box">
-            <h2>Educación</h2>
-            <div><h3>Platzi
+            <h1>Educación</h1>
+            <div><h2>Platzi
                 <p>Desarrollo Web, Desarrollo de páginas web, contenido digital/multimedia y recursos informáticos.</p>
                 <span>Enero 2021 - Actualidad 2022</span>
-            </h3></div>
-            <div><h3>IEU Universidad</h3>
+            </h2></div>
+            <div><h2>IEU Universidad</h2>
                 <p>Ingeniero en Sistemas y Tecnologías de la Información, Tecnología informática/Tecnología de sistemas informáticos</p>
+                <span>2013 - 2016</span>
             </div>
         </div>
     </section>
@@ -129,7 +132,7 @@
 
     <section class="portfolio">
         <div class="box">
-            <img class="version1"src="./img/underConstruction.jpg" alt="Version 1.0">
+            <img class="imgConstruction"src="./img/underConstruction.jpg" alt="Construction">
         </div>
     </section>
 
@@ -145,18 +148,11 @@
         </div>
     </section>
 
-    <!-- VERSIONES CV -->
-<!--AQUI MOSTRARE LA CAPUTRA DE PANTALLA DE MI CV CON EL TIEMPO-->
-    <section class="version">
-        <div class="box">
-            <img class="version1"src="./img/version1.png" alt="Version 1.0">
-        </div>
-    </section>
     <!-- CONTACT -->
 
     <section class="contact">
     <div class="box">
-        <img class="version1"src="./img/underConstruction.jpg" alt="Version 1.0">
+        <img class="imgConstruction"src="./img/underConstruction.jpg" alt="Construction">
     </div>
     </section>
     <!-- FOOTER -->
@@ -166,7 +162,7 @@
     <div>
         <p>Redes Sociales</p>
         <p>Linkedln</p>   
-        <p><b>5:35pm⌚/ 25-04-22📆 😎</b></p>
+        <p><b>19:35 hrs⌚/ 26-04-22📆 😎</b></p>
     </div>
 </footer>
 </body>

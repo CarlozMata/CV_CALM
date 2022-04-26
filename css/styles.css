@@ -15,13 +15,18 @@ body {
 
 .box {
     margin-top: 50px;
-    width: 80%;
+    width: 50%;
     max-width: 1200px;
     background-color: black;
     border: 2px solid black;
     color: aliceblue;
     background-image: url("../img/wallpaper2.jpg");
     padding: 8px;
+    justify-content: center;
+    }
+    .imgConstruction {
+        width: 100%;
+        height: 100%;     
     }
 
 /*NAV*/
@@ -41,9 +46,18 @@ display: flex;
     background-color:transparent;
     border: 0px none;
 }
+.table-container-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    max-width: 1200px;
+    width:80%;
+    overflow-wrap: break-word;
+}
 .table-container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
 }
 .nav-left {
     font-size: 21px;
@@ -163,6 +177,9 @@ display: flex;
 .about-box1 {
     width: 100%;
 }
+.table-container {
+    font-size: 14px;
+}
 .about-box2 {
 /*    background-color: goldenrod;    */
     width: 100%;
@@ -233,9 +250,17 @@ display: flex;
 .education {
     display: flex;
     width: 100%;
-    height: 500px;
-/*    background-color:blue;*/
+    height: 300px;
     justify-content: center;
+}
+.education div {
+    padding: 10px;
+}
+.education p {
+    font-size: 14px
+}
+.education span {
+    font-size: 12px;
 }
 
 /*SECTION PORTFOLIO*/
@@ -256,16 +281,7 @@ display: flex;
     justify-content: center;
 }
 
-.version {
-    display: flex;
-    width: 100%;
-    height: 900px;
-    justify-content: center;
-}
-.version1 {
-    width: 100%;
-    height: 100%;
-}
+
 /*SECTION CONTACT*/
 .contact {
     display: flex;
