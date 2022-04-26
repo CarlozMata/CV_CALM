@@ -280,7 +280,9 @@ display: flex;
 /*    background-color:violet;*/
     justify-content: center;
 }
-
+.certifications ul {
+    list-style: none;
+}
 
 /*SECTION CONTACT*/
 .contact {
