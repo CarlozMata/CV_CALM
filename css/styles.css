@@ -232,7 +232,7 @@ body {
 .skill {
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 550px;
     justify-content: center;
 }
 .column {
@@ -241,23 +241,30 @@ body {
     grid-template-rows: auto;    
     padding: 20px;
     justify-content: center;
+    text-align: center;
+    height: 100px;
 }
 .skills_item1 {
+    padding-bottom: 10px;
     grid-area: 1/1;
 }
 .skills_item2 {
+    padding-left: 15px;
     grid-area: 1/2;
 }
 .skills_item3 {
+    padding-bottom: 10px;
     grid-area: 2/1;
 }
 .skills_item4 {
+    padding-left: 15px;
     grid-area: 2/2;
 }
 .skills_item5 {
     grid-area: 3/1;
 }
 .skills_item6 {
+    padding-left: 15px;
     grid-area: 3/2;
 }
 .skills {
@@ -290,13 +297,14 @@ body {
 }
 .skills_bar--70::after{
     --skill-bar-length: 70%;
-}.skills_bar--80::after{
+}
+.skills_bar--80::after{
     --skill-bar-length: 80%;
 }
 .skills_bar--90::after{
     --skill-bar-length: 90%;
 }
-.skills_bar--90::after{
+.skills_bar--100::after{
     --skill-bar-length: 100%;
 }
 
