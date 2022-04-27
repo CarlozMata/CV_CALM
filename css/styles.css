@@ -1,7 +1,13 @@
-*/
+:root {
+    --transition: color 0.1s, background-color .2s ease-in-out;
+    --skill-bar-length: 0%;
+}
 * {
     margin: 0;
     padding: 0;
+}
+h2 {
+    font-size: 22px;
 }
 body {
     background-image: url("../img/wallpaper4.jpg");
@@ -20,6 +26,7 @@ body {
     background-image: url("../img/wallpaper2.jpg");
     padding: 8px;
     justify-content: center;
+    border-radius: 10px;;
     }
     .imgConstruction {
         width: 100%;
@@ -48,12 +55,12 @@ body {
     grid-gap: 5px;
     max-width: 1200px;
     min-width: 420px;
+    min-height: 30px;
     width:90%;
     word-break: break-all;
-/*    border: 1px solid white;
-*/    justify-content: space-evenly;
-align-content: center;
-}
+    justify-content: space-evenly;
+    align-content: center;
+    }
 .grid-container div {
 /*    border: 1px solid white;
 */    font-size: 12px;
@@ -222,16 +229,83 @@ align-content: center;
 
 
 /*SECTION SKILLS*/
-.skills {
+.skill {
     display: flex;
     width: 100%;
     height: 500px;
     justify-content: center;
 }
+.column {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;    
+    padding: 20px;
+    justify-content: center;
+}
+.skills_item1 {
+    grid-area: 1/1;
+}
+.skills_item2 {
+    grid-area: 1/2;
+}
+.skills_item3 {
+    grid-area: 2/1;
+}
+.skills_item4 {
+    grid-area: 2/2;
+}
+.skills_item5 {
+    grid-area: 3/1;
+}
+.skills_item6 {
+    grid-area: 3/2;
+}
+.skills {
+    padding: 30px;
+    align-content: center;
+}
+.skills_bar, 
+.skills_bar::after {
+    position: relative;
+    width: 250px;
+    height: 10px;
+    background-color: #888;
+    border-radius: 5px;
+    overflow: hidden;
+    }
+.skills_bar::after{
+    content: "";
+    position:absolute;
+    left:-250px;
+    background-color:#09CBEA;
+    transition: var(--transition);
+    animation: skill-bar-fill 2s ease-in-out forwards;
+}
+
+.skills_bar--50::after{
+    --skill-bar-length: 50%;
+}
+.skills_bar--60::after{
+    --skill-bar-length: 60%;
+}
+.skills_bar--70::after{
+    --skill-bar-length: 70%;
+}.skills_bar--80::after{
+    --skill-bar-length: 80%;
+}
+.skills_bar--90::after{
+    --skill-bar-length: 90%;
+}
+.skills_bar--90::after{
+    --skill-bar-length: 100%;
+}
 
 
-
-
+@keyframes skill-bar-fill {
+    to {
+        transform: translateX(var(--skill-bar-length));
+    }
+}
 
 
 
