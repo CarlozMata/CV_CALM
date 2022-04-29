@@ -9,10 +9,10 @@
     <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
     <script src="./main.js"></script>
 </head>
-<body id="invoice">
+<body>
 <nav class="nav">
 <div class="box">
-    <div class="grid-container">
+    <div class="nav-g">
         <div>Presentación</div>
         <div>Acerca de mi</div>
         <div>Habilidades</div>
@@ -21,25 +21,8 @@
         <div>Portafolio</div>
         <div>Certificaciones</div>
         <div>Contacto</div>
-<!--    <div class="nav-left">
-    <ul>
-        <li>Carlos Mata</li>
-    </ul>
-    </div>
-    <div class="nav-right">
-    <ul>
-        <li>Presentación</li>
-        <li>Acerca de mi</li>
-        <li>Habilidades</li>
-        <li>Experiencia</li>
-        <li>Educación</li>
-        <li>Portafolio</li>
-        <li>Certificaciones</li>
-        <li>Contacto</li>
-    </ul>
     </div>
 </div>
---></div>
 </nav>
 <main>
 <!-- PRESENTATION -->
@@ -71,33 +54,30 @@
 
     <section class="about">
         <div class="box">
-            <div class="table-container">
-            <div class="about-box1"><h2>Acerca de mi</h2><br><br>
-                <p>Hola! Soy Carlos Mata <br><br>
+            <h2>Acerca de mi</h2>
+            <div class="about-row">
+            <div class="about-box1">
+                <p>Hola! Soy Carlos Mata 
                     💻Soy un profesional, responsable, creativo, organizado con capacitación constante y apasionado de la Tecnologia.<br><br>
                     ❇️Con mas de 5 años de experiencia en el area de TI y con uno de los Partners mas importantes de todo el pais de la marca Dell.
                 </p>
             </div>
+            <div class="about-col">
             <div class="about-box2">
-            <br><br><ul><br><h2></h2>
-                <br><li><img src="./img/contacto/calendario.png" alt="Calendar">Age
-                </li>
-                <li><img src="./img/contacto/email.png" alt="Email">Email
-                </li>                
-                <br><li><img src="./img/contacto/smartphone.png" alt="Phone">Phone
-                </li>
-                <li><img src="./img/contacto/map.png">Address</li>
-            </ul>
+                <div><img src="./img/contacto/calendario.png" alt="Calendar">Age
+                </div>
+                <div><img src="./img/contacto/email.png" alt="Email">Email
+                </div>                
+                <div><img src="./img/contacto/smartphone.png" alt="Phone">Phone
+                </div>
+                <div><img src="./img/contacto/map.png">Address</div>
             </div>
             <div class="about-box3">
-            <ul>
-                <br><br><br><br><br><br>
-                <li>29</li>
-                <a href="mailto:"carlos_1992_@hotmail.com">carlos_1992_@hotmail.com<li></li></a>
-                <a href="tel:"9931079507><li>9931079507</li></a>
-                <li>Mérida, Yuc. Mexico.</p></li>
-            </ul>
-            </div>
+                <div>29</div>
+                <div><a href="mailto:"carlos_1992_@hotmail.com">carlos_1992_@hotmail.com</a></div>
+                <div><a href="tel:"9931079507>9931079507</a></div>
+                <div>Mérida, Yuc. Mexico.</p></div>
+            </div</div>
         </div>
     </div>
 </section>
@@ -254,14 +234,30 @@
     <section class="portfolio">
         <div class="box">
             <img class="imgConstruction"src="./img/underConstruction.jpg" alt="Construction">
-        </div>
+    <!--        <div class="portfolio-g">
+                <div class="img-left">img left</div>
+                <div class="description-right">right</div>
+            </div>
+            <div class="portfolio-g">
+                <div class="description-left">left</div>
+                <div class="img-right"> img right</div>
+            </div>
+            <div class="portfolio-g">
+                <div class="img-left">img left</div>
+                <div class="description-right">right</div>
+            </div>
+            <div class="portfolio-g">
+                <div class="description-left">left</div>
+                <div class="img-right"> img right</div>
+            </div>
+    -->  </div>
     </section>
 
     <!-- CERTIFICATIONS -->
 
     <section class="certifications">
         <div class="box">
-            <h3>Certificados</h3>
+            <h2>Certificados</h2>
             <ul> <!--SEPARAR LOS CERTIFICADOS PERSONALES Y LABORALES-->
                 <!--<li>.<p>Platzi</p><span>Expedición: </span><p><b>ID:</b>. ➟ <a href="https" target="__blank">Ver Certificado</a></p></li>-->
                 <li>Closures y Scope en JavaScript<p>Platzi</p><span>Expedición: abril 2022</span><p><b>ID:</b>4c1404cd-7ab5-44b0-82da-643cdddaef5 ➟ <a href="https://platzi.com/p/CarlozMata/curso/1807-scope/diploma/detalle/" target="__blank">Ver Certificado</a></p></li>
@@ -323,7 +319,11 @@
 
     <section class="contact">
     <div class="box">
-        <img class="imgConstruction"src="./img/underConstruction.jpg" alt="Construction">
+        <h2>Contactame</h2>
+        <div class="contact-g">
+            <div class="col-left"></div>
+            <div class="col-right"></div>
+        </div>
     </div>
     </section>
     <!-- FOOTER -->
@@ -333,7 +333,7 @@
     <div>
         <p>Redes Sociales</p>
         <p>Linkedln</p>   
-        <p><b>02:35 hrs⌚/ 28-04-22📆 😎</b></p>
+        <p><b>18:42 hrs⌚/ 29-04-22📆 😎</b></p>
     </div>
 </footer>
 </body>
