@@ -145,6 +145,8 @@ body {
     display: flex;
     font-size: 14px;
     width: 100%;
+    flex-direction: column; /*ESTO VA EN EL MEDIA QUARE*/
+
 }
 .about-box1 {
     width: 100%; 
@@ -225,10 +227,7 @@ body {
     padding-left: 15px;
     grid-area: 3/2;
 }
-.skills {
-    padding: 30px;
-    align-content: center;
-}
+
 .skills_bar, 
 .skills_bar::after {
     position: relative;
@@ -246,6 +245,22 @@ body {
     transition: var(--transition);
     animation: skill-bar-fill 2s ease-in-out forwards;
 }
+
+.new_progress[value]::-webkit-progress-value
+ {
+     /*
+    background-image:
+    -webkit-linear-gradient(-45deg,  
+                            transparent 33%,rgba(0, 0, 0, .1) 33%, 
+                            rgba(0,0, 0, .1) 66%, transparent 66%),
+    -webkit-linear-gradient(top, 
+                            rgba(255, 255, 255, .25), 
+                            rgba(0, 0, 0, .25)),
+    -webkit-linear-gradient(left, #09c, #f44);
+
+ border-radius: 2px; 
+ background-size: 35px 20px, 100% 100%, 100% 100%;
+*/}
 
 .skills_bar--50::after{
     --skill-bar-length: 50%;
