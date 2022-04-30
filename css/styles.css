@@ -147,7 +147,7 @@ body {
     width: 100%;
 }
 .about-box1 {
-    width: 50%;
+    width: 100%; 
     min-width: 100px;
     flex-wrap: wrap;
 
@@ -160,52 +160,38 @@ body {
 
 }
 .about-box2 {
-    width: 50%;
+    width: 30%;
     text-align: left;
     word-wrap: break-word;
-    word-break: break-all;
 }
 .about-box2 img {
     width: 18px;
     height: 15px;  
     }
-.about-box2 li {
-    
-}
 .about-box2 ul {
     list-style:none;
 }
 .about-box3 {
-    height: 100%;   
-    word-wrap: break-word;
-    
-}
-.about-box3 div {
-    
-}
-.about-box3 li {
+    word-wrap: break-word;   
+    width: 70%;    
 }
 .about-box3 ul {
     list-style: none;
     padding: 0;
-/*    overflow-wrap: break-word;*/
 }
 .about-box3 a {
     list-style: none;
-    color: white;
-    
+    color: white;   
 }
-.email {
+.about-box3 a {
     word-break: break-all;
-    word-wrap: break-word;
+
 }
-
-
 /*SECTION SKILLS*/
 .skill {
     display: flex;
     width: 100%;
-    height: 550px;
+    height: 750px;
     justify-content: center;
 }
 .column {
@@ -215,7 +201,6 @@ body {
     padding: 20px;
     justify-content: center;
     text-align: center;
-    height: 100px;
 }
 .skills_item1 {
     padding-bottom: 10px;
@@ -281,7 +266,6 @@ body {
     --skill-bar-length: 100%;
 }
 
-
 @keyframes skill-bar-fill {
     to {
         transform: translateX(var(--skill-bar-length));
@@ -292,7 +276,6 @@ body {
 .experience {
     display: flex;
     width: 100%;
-/*    background-color:aqua;*/
     justify-content: center;
 }
 .experience-box {
@@ -323,8 +306,6 @@ body {
     margin-top: 100px; 
 
 }
-
-
 
 /*SECTION EDUCATION*/
 .education {
@@ -395,6 +376,7 @@ body {
 }
 /*FOOTER*/
 footer {
+    margin-top: 40px;
     display: flex;
     width: 100%;
     height: 100%;
@@ -403,6 +385,7 @@ footer {
     color: aliceblue;
 }
 footer p {
+    gap:10px;
     font-size: 14px;
     text-align: center;
 }
@@ -429,7 +412,6 @@ footer p {
 /*
 ME FALTA:
 
-TERMINAR DE AGREGAR MIS CERTIFICADOS Y ACOMODARLOS
 ACOMODAR DONDE VAN A IR MIS PROYECTOS
 AGREGAR ANIMACIÓN AL PRECIONAR"cONTACTAME" PARA QUE SOLBRE SALGAN MIS DATOS PERSONALES.
 AGREGAR VARIABLES 
