@@ -142,7 +142,7 @@ body {
     display: flex;
     font-size: 14px;
     width: 100%;
-    flex-direction: column; /*ESTO VA EN EL MEDIA QUARE*/
+ /*   flex-direction: column; /*ESTO VA EN EL MEDIA QUARE*/
 
 }
 .about-box1 {
@@ -228,7 +228,7 @@ body {
 .skills_bar, 
 .skills_bar::after {
     position: relative;
-    width: 250px;
+    width: 220px;
     height: 10px;
     background-color: #888;
     border-radius: 5px;
@@ -237,27 +237,15 @@ body {
 .skills_bar::after{
     content: "";
     position:absolute;
-    left:-250px;
+    left:-220px;
     background-color:#09CBEA;
     transition: var(--transition);
     animation: skill-bar-fill 2s ease-in-out forwards;
 }
 
-.new_progress[value]::-webkit-progress-value
- {
-     /*
-    background-image:
-    -webkit-linear-gradient(-45deg,  
-                            transparent 33%,rgba(0, 0, 0, .1) 33%, 
-                            rgba(0,0, 0, .1) 66%, transparent 66%),
-    -webkit-linear-gradient(top, 
-                            rgba(255, 255, 255, .25), 
-                            rgba(0, 0, 0, .25)),
-    -webkit-linear-gradient(left, #09c, #f44);
-
- border-radius: 2px; 
- background-size: 35px 20px, 100% 100%, 100% 100%;
-*/}
+.new_progress {
+    color: saddlebrown;
+}
 
 .skills_bar--50::after{
     --skill-bar-length: 50%;
@@ -404,8 +392,8 @@ footer p {
 
 
 /*MEDIAQUERIES*/
-/*
-@media only screen and (max-width: 800px)
+
+@media only screen and (max-width:1000px)
 {
 .box > * {
     width: 100%;
@@ -413,14 +401,77 @@ footer p {
 .box {
      flex-direction: column;
  }
+ .about-row {
+    display: flex;
+    font-size: 14px;
+    width: 100%;
+   flex-direction: column; /*ESTO VA EN EL MEDIA QUARE*/
 }
-@media (max-width: 375px)
+.skill {
+    display: flex;
+    width: 100%;
+    height: 750px;
+    justify-content: center;
+    
+}
+.column {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;    
+    padding: 20px;
+    justify-content: center;
+    text-align: center;
+}
+.skills_item1 {
+    padding-bottom: 15px;
+    grid-area: 1/1;
+}
+.skills_item2 {
+    padding-bottom: 15px;
+    padding-left: 0px;
+    grid-area: 2/1;
+}
+.skills_item3 {
+    padding-bottom: 15px;
+    grid-area: 3/1;
+}
+.skills_item4 {
+    padding-bottom: 15px;
+    padding-left: 0px;
+    grid-area: 4/1;
+}
+.skills_item5 {
+    padding-bottom: 15px;
+    grid-area: 5/1;
+}
+.skills_item6 {
+    padding-bottom: 15px;
+    padding-left: 0px;
+    grid-area: 7/1;
+}
+
+@media (max-width: 510px)
 {
 .box {
   display: inherit;
-  height: auto;
+  position: static;
+  width:300px;
 }
-*/
+.about-row {
+    font-size: 14px;
+   flex-direction: column; /*ESTO VA EN EL MEDIA QUARE*/
+}
+section .presentation {
+    display: inherit; 
+}
+.presentation-box1 img {
+    margin-top: 0px;
+    width: 150px;
+    height: 100%;
+    border: 5px solid aliceblue;
+    border-radius: 50%;
+}
+
 /*
 ME FALTA:
 
