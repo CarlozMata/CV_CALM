@@ -402,6 +402,10 @@ body {
 .contact h2 {
     color: aliceblue;
 }
+.contact a {
+    text-decoration: none;
+
+}
 .contact-g {
     display: flex;
     width: 100%;
