@@ -391,7 +391,6 @@ body {
 .certifications a {
     color:aliceblue
 }
-
 /*SECTION CONTACT*/
 .contact {
     display: flex;
@@ -404,7 +403,6 @@ body {
 }
 .contact a {
     text-decoration: none;
-
 }
 .contact-g {
     display: flex;
