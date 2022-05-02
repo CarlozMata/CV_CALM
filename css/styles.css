@@ -395,18 +395,71 @@ body {
 .contact {
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 450px;
     justify-content: center;
+}
+.contact h2 {
+    color: aliceblue;
 }
 .contact-g {
     display: flex;
+    width: 100%;
+    height: 86%; 
+    align-content: center;
 }
-.col-right {
+.col-form {
+    display: flex;
+    width: 100%;
+    height: 100%;
+}
+.form {
+    display: flex;
+    width: 100%;
+    border-radius: 16px;
+    align-items: center;
+    padding: 20px;
+    gap:300px; 
+}
+.form_input {
+    font-family: inherit;
+    width: 100%;
+    height: 30px;  
+    font-size: 14px;
+    border: 1px solid black;
+    border-radius: 4px;
+    margin-top: 2px;
+}
+.form_input--message {
+    margin-top: 10px;
+    resize: none;
+    width: 100%;
+    height: 90px;
+}
+.form_cta {
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+    height: 30px;
+    width: 100%;
+    text-align: center;
+}
+.form_cta:hover {
+    background-color:gray; 
+    cursor: pointer;
+    box-shadow: 0px 5px 10px gray;
+}
+.col-map {
+    display: flex; 
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 100%;;
+}
+.col-map iframe {
+    width: 90%;
+    height: 90%;
+}
 
-}
-.col-left {
-    
-}
 /*FOOTER*/
 footer {
     margin-top: 40px;
@@ -422,8 +475,17 @@ footer p {
     font-size: 14px;
     text-align: center;
 }
-
-
+.footer {
+    background-image: url("../img/wallpaper2.jpg");
+    display: flex;
+    width: 100%;;
+    height: 40px;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-right a::after{ 
+    content:" |";
+}
 /*MEDIAQUERIES*/
 
 @media only screen and (max-width:1000px)
@@ -482,7 +544,25 @@ footer p {
     padding-left: 0px;
     grid-area: 7/1;
 }
-
+.contact .box {
+    display: inherit;
+    position: static;
+  }
+.contact-g {
+    margin-top: -50px;
+    display: flex;
+    width: 100%;
+    height: 95%;
+    flex-wrap:wrap;
+}
+.col-map {
+    display: flex; 
+    width: 100%;
+    height: 100px; 
+    margin-top: -70px;
+    justify-content: center;
+    align-items: center;
+}
 @media (max-width: 510px)
 {
 .box {
@@ -515,6 +595,6 @@ ME FALTA:
 - MI NAV ME LLEVE A LAS UBICACIONES MENCIONADAS
 - CAMBIAR MI TIPO DE FUENTE (MAXIMO 2)
 - VISUALIZAR SOLAMENTE MIS PRIMEROS 5 CERTIFICADOS Y PRESIONAR UN BOTON PARA VER TODOS LOS DEMAS..
-
+- AGREGAR FOTO A LA PESTAÑA DEL NAVEGADOR
 
 */
