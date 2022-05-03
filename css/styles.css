@@ -636,6 +636,13 @@ footer p {
 .portfolio-img1 {
     grid-area:1/1;
 }
+.portfolio-img1 img {
+    width: 100%;   
+    min-width: 235px;    
+    min-height: 150px; 
+    max-height:250px;
+    border: 1px solid gray;
+} 
 .portfolio-description1 {
     margin-top: 20px;
     grid-area: 2/1;
@@ -648,7 +655,13 @@ footer p {
     margin-top: 20px;
     grid-area: 4/1;
 }
-
+.portfolio-img2 img {
+    width: 100%;   
+    min-width: 235px;    
+    min-height: 150px; 
+    max-height:250px;
+    border: 1px solid gray;
+} 
 .contact .box {
     display: inherit;
     position: static;
