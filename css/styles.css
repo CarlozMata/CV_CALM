@@ -7,7 +7,7 @@
     padding: 0;
     box-sizing: border-box;
 /*    border:1px solid yellow;
-*/}
+*/}  
 h2 {
     font-size: 22px;
 }
@@ -27,7 +27,7 @@ body {
     background-image: url("../img/wallpaper2.jpg");
     padding: 8px;
     justify-content: center;
-    border-radius: 10px;;
+    border-radius: 10px;
     }
     .imgConstruction {
         width: 100%;
@@ -353,13 +353,49 @@ body {
 .portfolio{
     display: flex;
     width: 100%;
-    height: 500px;
     justify-content: center;
 }
 .portfolio-g {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 250px 250px;  
+    text-align: center;
+}
+.portfolio-g a {
+    color: aliceblue;    
+}
+
+
+.portfolio-img1 img {
+    width: 100%;   
+    min-width: 235px;    
+    min-height: 150px; 
+    height:100%;
+    border: 1px solid gray;
+} 
+.portfolio-img1 {
     margin-top: 20px;
-    display: flex;
-    justify-content: space-around;
+    grid-area:1/1;
+}
+.portfolio-description1 {
+    margin-top: 80px;
+    grid-area: 1/2;
+}
+
+
+.portfolio-img2 img {
+    width: 100%;   
+    min-width: 235px;    
+    min-height: 150px; 
+    height:100%;
+    border: 1px solid gray;
+}
+.portfolio-img2 {
+    grid-area:2/2;
+}
+.portfolio-description2 {
+    margin-top: 80px;
+    grid-area: 2/1;
 }
 
 /*SECTION CERTIFICATIONS*/
@@ -374,6 +410,40 @@ body {
     margin-left: 20px;
     gap:10px;
     margin-top: 20px;
+}
+#certificados {
+    display: none;
+}
+#button-certification-on {
+    margin-top: 10px;
+    width:100%;  
+    height: 36px; 
+    border: 2px solid white; 
+    background-color: aliceblue; 
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+} 
+#button-certification-on:hover {
+    background-color: gray;
+    border: 1px solid #888;
+}
+#button-certification-off {
+    display: none;
+    margin-top: 10px;
+    width:100%;  
+    height: 36px;
+    border: 2px solid white; 
+    background-color: aliceblue; 
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+} 
+#button-certification-off:hover {
+    background-color: gray;
+    border: 1px solid #888;
 }
 .img_university_cert {
     width:50px;
@@ -557,6 +627,28 @@ footer p {
     padding-left: 0px;
     grid-area: 7/1;
 }
+.portfolio-g {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: auto;  
+    margin-top: 10px;
+}
+.portfolio-img1 {
+    grid-area:1/1;
+}
+.portfolio-description1 {
+    margin-top: 20px;
+    grid-area: 2/1;
+}
+.portfolio-img2 {
+    margin-top: 10px;
+    grid-area:3/1;
+}
+.portfolio-description2 {
+    margin-top: 20px;
+    grid-area: 4/1;
+}
+
 .contact .box {
     display: inherit;
     position: static;
@@ -601,13 +693,10 @@ section .presentation {
 /*
 ME FALTA:
 
--ACOMODAR DONDE VAN A IR MIS PROYECTOS
 -AGREGAR ANIMACIÓN AL PRECIONAR"cONTACTAME" PARA QUE SOLBRE SALGAN MIS DATOS PERSONALES.
 -AGREGAR VARIABLES 
 - PARA MOVILES CREAR UN MENU DESPLEGABLE CON MI NAV
 - MI NAV ME LLEVE A LAS UBICACIONES MENCIONADAS
 - CAMBIAR MI TIPO DE FUENTE (MAXIMO 2)
-- VISUALIZAR SOLAMENTE MIS PRIMEROS 5 CERTIFICADOS Y PRESIONAR UN BOTON PARA VER TODOS LOS DEMAS..
-- AGREGAR FOTO A LA PESTAÑA DEL NAVEGADOR
 
 */

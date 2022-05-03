@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="icon" href="./img/mifoto.jpg">
-    <title>CV Carlos Mata</title>
+    <title>Carlos Mata @CarlozMata</title>
     <script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
     <script src="./main.js"></script>
 </head>
@@ -231,24 +231,39 @@
 
 <section class="portfolio">
     <div class="box">
-        <img class="imgConstruction"src="./img/underConstruction.jpg" alt="Construction">
-<!--        <div class="portfolio-g">
-            <div class="img-left">img left</div>
-            <div class="description-right">right</div>
+        <h2>Portafolio</h2>
+    <div class="portfolio-flex">
+    <div class="portfolio-g">
+            <div class="portfolio-img1"><img src="./img/portafolios/cv.png"></div>
+            <div class="portfolio-description1">
+                <h3>Frontend / HTML / CSS / JavaScript</h3>
+                <p>Sitio web personal</p>
+                <a href="https://carlozmata.com/">https://carlozmata.com/</a>
+            </div>
+            <div class="portfolio-img2"><img src="./img/portafolios/mingos.jpg"></div>
+            <div class="portfolio-description2">
+            <h3>Frontend / HTML / CSS / JavaScript</h3>
+            <p>Diseño web para Heladeria popular de Tabasco</p>
+            <a href="https://carlozmata.com/">https://heladosmingos.com/</a>
         </div>
-        <div class="portfolio-g">
-            <div class="description-left">left</div>
-            <div class="img-right"> img right</div>
+    </div>
+    </div>    
+<!--    <div class="portfolio-g-box">
+        <div class="portfolio-img"><img class="imgConstruction"src="./img/underConstruction.jpg" alt="Construction"></div>
+        <div class="portfolio-description">
+            <h3></h3>
+            <p></p>
         </div>
-        <div class="portfolio-g">
-            <div class="img-left">img left</div>
-            <div class="description-right">right</div>
+    </div>
+    <div class="portfolio-g-box-reverse">
+        <div class="portfolio-description">
+            <h3></h3>
+            <p></p>
         </div>
-        <div class="portfolio-g">
-            <div class="description-left">left</div>
-            <div class="img-right"> img right</div>
-        </div>
--->  </div>
+        <div class="portfolio-img"><img class="imgConstruction"src="./img/underConstruction.jpg" alt="Construction"></div>
+    </div>
+    </div>
+--> </div>
 </section>
 
 <!-- CERTIFICATIONS -->
@@ -257,11 +272,13 @@
     <div class="box">
         <h2>Certificados</h2>
         <ul> <!--SEPARAR LOS CERTIFICADOS PERSONALES Y LABORALES-->
-            <div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" ><li>Closures y Scope en JavaScript<p>Platzi</p><span>Expedición: abril 2022</span><p><b>ID:</b>4c1404cd-7ab5-44b0-82da-643cdddaef5 ➟ <a href="https://platzi.com/p/CarlozMata/curso/1807-scope/diploma/detalle/" target="__blank">Ver Certificado</a></p></li></div>
+<!--50-->   <div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" ><li>Closures y Scope en JavaScript<p>Platzi</p><span>Expedición: abril 2022</span><p><b>ID:</b>4c1404cd-7ab5-44b0-82da-643cdddaef5 ➟ <a href="https://platzi.com/p/CarlozMata/curso/1807-scope/diploma/detalle/" target="__blank">Ver Certificado</a></p></li></div>
             <div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" ><li>Flujo de Desarrollo Moderno CodeStream<p>Platzi</p><span>Expedición: abril 2022</span><p><b>ID:</b>1be56e-14-8abf-452d-8f91-53d6ccc4efea ➟ <a href="https://platzi.com/p/CarlozMata/curso/2157-desarrollo-moderno-codestream/diploma/detalle/" target="__blank">Ver Certificado</a></p></li></div>
             <div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" ><li>Fundamentos de Ingeniería de Software<p>Platzi</p><span>Expedición: abril 2022</span><p><b>ID:</b>5b77c72a-0720-43b5-ba25-f0170bc38458 ➟ <a href="https://platzi.com/p/CarlozMata/curso/1098-ingenieria/diploma/detalle/" target="__blank">Ver Certificado</a></p></li></div>
             <div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" ><li>Prework: Configuración de Entorno de Desarrollo en Linux<p>Platzi</p><span>Expedición: abril 2022</span><p><b>ID:</b>b6ac87ca-6f47-4737-942d-0b3bb2f4098 ➟ <a href="https" target="__blank">Ver Certificado</a></p></li></div>
             <div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" ><li>Programación Orientada a Objetos<p>Platzi</p><span>Expedición: abril 2022</span><p><b>ID:</b>616ef68a-1328-433b-aca1-d100449b8e7b ➟ <a href="https://platzi.com/p/CarlozMata/curso/1474-oop/diploma/detalle/" target="__blank">Ver Certificado</a></p></li></div>
+            <button type="button" id="button-certification-on" onclick="mostrarCertificados();">Mostrar todos los Certificados (50)</button>
+            <div id="certificados">
             <div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" ><li>Computación Básica<p>Platzi</p><span>Expedición: marzo 2022</span><p><b>ID:</b>09c732cc-76cf-4a2e-be90-bcdbf68c995a ➟ <a href="https://platzi.com/p/CarlozMata/curso/2793-computacion-basica/diploma/detalle/" target="__blank">Ver Certificado</a></p></li></div>
             <div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" ><li>Estrategias de Contenido para LinkedIn<p>Platzi</p><span>Expedición: marzo 2022</span><p><b>ID:</b>1e4f6450-0c43-4a71-9b97-d50744c5a684 ➟ <a href="https://platzi.com/p/CarlozMata/curso/2212-estrategias-contenido-linkedin/diploma/detalle/" target="__blank">Ver Certificado</a></p></li></div>
             <div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" ><li>Introducción a Terminal y Línea de Comandos 2019<p>Platzi</p><span>Expedición: marzo 2022</span><p><b>ID:</b>0f02caaa-4284-41ae-87ff-5f3691ffe1bf ➟ <a href="https://platzi.com/p/CarlozMata/curso/1748-terminal-2019/diploma/detalle/" target="__blank">Ver Certificado</a></p></li></div>
@@ -307,6 +324,9 @@
             <div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" ><li>Core Client Credential 2017<p>Dell EMC</p><span>Expedición: octubre 2017</span><p><b>ID:</b>STFKF0MRDJF41PS8 ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></li></div>
             <div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" ><li>Workstation Credential 2017<p>Dell EMC</p><span>Expedición: octubre 2017</span><p><b>ID:</b>S6P2E9YRBF44QLK7 ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></li></div>
             <div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" ><li>Cloud Client-Computin Credential 2017 <p>Dell EMC</p><span>Expedición: octubre 2016</span><p><b>ID:</b> B6PCF92ZDN4QQJ3B ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></li></div>
+        </div>
+            <button type="button" id="button-certification-off" onclick="ocultarCertificados();">Ocultar Certificados</button>
+
             </ul></div>
 </section>
 
@@ -337,7 +357,7 @@
 
 <footer>
     <div class="footer">
-        <div><a href="https://carlozmata.com/" target="__blank">Carlos Alberto López Mata @CarlozMata © 2022</a></div>
+        <div><a href="https://carlozmata.com/" target="__blank">CarlozMata © 2022</a></div>
         <div class="footer-right">
             <a href="https://github.com/CarlozMata" target="__blank">GitHub</a>
             <a href="https://www.linkedin.com/in/carlosalbertolopezmata/" target="__blank">LinkedIn</a>
