@@ -13,6 +13,8 @@
 --btn2: 14px; 
 /*Colores*/
 --white-color: aliceblue;
+--gray-color: #888;
+--blue-color: #09CBEA;
 /*Espciado*/
 --space: 10px;
 /*Box Shadow*/
@@ -54,7 +56,7 @@ body {
     width: 65%;
     max-width: 1200px;
     border: 2px solid black;
-    color: aliceblue;
+    color: var(--white-color);
     background-image: url("../img/wallpaper2.jpg");
     padding: 8px;
     justify-content: center;
@@ -90,7 +92,7 @@ body {
     content:" |";
 }
 .nav-g div:hover {
-    background-color:gray;
+    background-color:var(--gray-color);
     border-radius: 1px;
     cursor: pointer;
 }
@@ -113,7 +115,7 @@ body {
     margin-top: 40px;
     width: 150px;
     height: 150%;
-    border: 5px solid aliceblue;
+    border: 5px solid var(--white-color);
     border-radius: 50%;
 }
 .presentation-box2 {
@@ -144,16 +146,13 @@ body {
 }
 .presentation-box4 button {
     border: 1px solid black;
-    background-color: white;
     padding: 6px;
     font-size: var(--btn1);
-
 }
 .presentation-box4 button:hover {
-    background-color: grey;
+    background-color: var(--gray-color);
     cursor: pointer;
 }
-
 /*SECTION ABOUT*/
 .about {
     display: flex;
@@ -205,7 +204,7 @@ body {
 }
 .about-box3 a {
     list-style: none;
-    color: white;   
+    color: var(--white-color);   
 }
 .about-box3 a {
     word-break: break-all;
@@ -261,7 +260,7 @@ body {
     position: relative;
     width: 300px; 
     height: 20px; 
-    background-color: #888;
+    background-color: var(--gray-color);
     border-radius: 5px;
     overflow: hidden;
     }
@@ -269,15 +268,10 @@ body {
     content: "";
     position:absolute;
     left:-300px;  
-    background-color:#09CBEA;
+    background-color:var(--blue-color);
     transition: var(--transition);
     animation: skill-bar-fill 2s ease-in-out forwards;
 }
-
-.new_progress {
-    color: saddlebrown;
-}
-
 .skills_bar--50::after{
     --skill-bar-length: 50%;
 }
@@ -329,7 +323,7 @@ body {
     font-weight: bold;
 }
 .experience-company a {
-    color: aliceblue; 
+    color: var(--white-color); 
 }
 .experience-job {
     font-weight: bold;
@@ -365,7 +359,6 @@ body {
 }
 .university{
     display: flex;
-    flex-direction: ;
     align-items: center;
     gap:10px;
     margin-top: 20px;
@@ -383,7 +376,6 @@ body {
 .education span {
     font-size: 12px;
 }
-
 /*SECTION PORTFOLIO*/
 .portfolio{
     display: flex;
@@ -404,14 +396,14 @@ body {
     font-size: var(--median);
 }
 .portfolio-g a {
-    color: aliceblue;    
+    color: var(--white-color);    
 }
 .portfolio-img1 img {
     width: 100%;   
     min-width: 235px;    
     min-height: 150px; 
     height:100%;
-    border: 1px solid gray;
+    border: 1px solid var(--gray-color);
 } 
 .portfolio-img1 {
     margin-top: 20px;
@@ -427,7 +419,7 @@ body {
     min-width: 235px;    
     min-height: 150px; 
     height:100%;
-    border: 1px solid gray;
+    border: 1px solid var(--gray-color);
 }
 .portfolio-img2 {
     grid-area:2/2;
@@ -457,32 +449,32 @@ body {
     margin-top: 10px;
     width:100%;  
     height: 36px; 
-    border: 2px solid white; 
-    background-color: aliceblue; 
+    border: 2px solid var(--white-color); 
+    background-color: var(--white-color); 
     border-radius: 10px;
     font-weight: bold;
     font-size: var(--btn2);
     cursor: pointer;
 } 
 #button-certification-on:hover {
-    background-color: gray;
-    border: 1px solid #888;
+    background-color: var(--gray-color);
+    border: 1px solid var(--gray-color);
 }
 #button-certification-off {
     display: none;
     margin-top: 10px;
     width:100%;  
     height: 36px;
-    border: 2px solid white; 
-    background-color: aliceblue; 
+    border: 2px solid var(--white-color); 
+    background-color: var(--white-color); 
     border-radius: 10px;
     font-weight: bold;
     font-size: var(--btn2);
     cursor: pointer;
 } 
 #button-certification-off:hover {
-    background-color: gray;
-    border: 1px solid #888;
+    background-color: var(--gray-color);
+    border: 1px solid var(--gray-color);
 }
 .img_university_cert {
     width:50px;
@@ -498,7 +490,7 @@ body {
     font-size: var(--small);
 }
 .certifications a {
-    color:aliceblue
+    color:var(--white-color);
 }
 /*SECTION CONTACT*/
 .contact {
@@ -508,7 +500,7 @@ body {
     justify-content: center;
 }
 .contact h2 {
-    color: aliceblue;
+    color: var(--white-color);
     font-size: var(--h2);
 }
 .contact a {
@@ -557,9 +549,9 @@ body {
     text-align: center;
 }
 .form_cta:hover {
-    background-color:gray; 
+    background-color:var(--gray-color); 
     cursor: pointer;
-    box-shadow: 0px 5px 10px gray;
+    box-shadow: 0px 5px 10px var(--gray-color);
 }
 .col-map {
     display: flex; 
@@ -581,7 +573,7 @@ footer {
     height: 100%;
     background-color:black;
     justify-content: center;
-    color: aliceblue;
+    color: var(--white-color);
 }
 footer p {
     gap:10px;
@@ -596,18 +588,18 @@ footer p {
     font-size: var(--small);
     justify-content: space-around;
     align-items: center;
-    color: aliceblue;
+    color: var(--white-color);
 }
 .footer-right a::after{ 
     content:" |";
 }
 .footer a:hover {    
-    background-color:gray;
+    background-color:var(--gray-color);
     border-radius: 1px;
     cursor: pointer;
 }
 .footer a {
-    color: aliceblue;
+    color: var(--white-color);
     text-decoration: none;
 }
 /*MEDIAQUERIES*/
@@ -688,7 +680,7 @@ footer p {
     position: relative;
     width: 260px; 
     height: 15px; 
-    background-color: #888;
+    background-color: var(--gray-color);
     border-radius: 5px;
     overflow: hidden;
     }
@@ -696,7 +688,7 @@ footer p {
     content: "";
     position:absolute;
     left:-260px; 
-    background-color:#09CBEA;
+    background-color:var(--blue-color);
     transition: var(--transition);
     animation: skill-bar-fill 2s ease-in-out forwards;
 }
@@ -717,7 +709,7 @@ footer p {
     min-width: 235px;    
     min-height: 150px; 
     max-height:250px;
-    border: 1px solid gray;
+    border: 1px solid var(--gray-color);
 } 
 .portfolio-description1 {
     margin-top: 20px;
@@ -736,7 +728,7 @@ footer p {
     min-width: 235px;    
     min-height: 150px; 
     max-height:250px;
-    border: 1px solid gray;
+    border: 1px solid var(--gray-color);
 } 
 .contact .box {
     display: inherit;
@@ -776,7 +768,7 @@ section .presentation {
     margin-top: 0px;
     width: 150px;
     height: 100%;
-    border: 5px solid aliceblue;
+    border: 5px solid var(--white-color);
     border-radius: 50%;
 }
 
