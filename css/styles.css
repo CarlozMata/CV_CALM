@@ -27,9 +27,8 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-/*    border:1px solid yellow;
-*/}  
-
+/*    border:1px solid yellow;*/
+}  
 * h1 {
     font-size: var(--h1);
 }
@@ -39,8 +38,6 @@
 *h3 {
     font-size: var(--h3);
 }
-
-
 body {
     font-family: 'DM Sans', sans-serif;
     font-family: 'Montserrat', sans-serif;
@@ -62,9 +59,9 @@ body {
     justify-content: center;
     border-radius: 10px;
     }
-    .imgConstruction {
-        width: 100%;
-        height: 100%;     
+.imgConstruction {
+    width: 100%;
+    height: 100%;     
     }
 
 /*NAV*/
@@ -253,8 +250,6 @@ body {
 .skills_item7 {
     grid-area: 4/1;
 }
-
-
 .skills_bar, 
 .skills_bar::after {
     position: relative;
@@ -777,9 +772,6 @@ section .presentation {
 ME FALTA:
 
 -AGREGAR ANIMACIÓN AL PRECIONAR"cONTACTAME" PARA QUE SOLBRE SALGAN MIS DATOS PERSONALES.
--AGREGAR VARIABLES 
 - PARA MOVILES CREAR UN MENU DESPLEGABLE CON MI NAV
 - MI NAV ME LLEVE A LAS UBICACIONES MENCIONADAS
-- CAMBIAR MI TIPO DE FUENTE (MAXIMO 2)
-
 */
