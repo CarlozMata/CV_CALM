@@ -1,4 +1,3 @@
-
 :root {
 /*Tipografia*/
 --h1: clamp(1.6rem, 3vw, 2.5rem);/*26px min;*/ 
@@ -27,7 +26,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-/*    border:1px solid yellow;*/
+/*  border:1px solid yellow;*/
 }  
 * h1 {
     font-size: var(--h1);
@@ -43,21 +42,20 @@ body {
     font-family: 'Montserrat', sans-serif;
     background-image: url("../img/wallpaper4.jpg");
     background-position:top;
-    background-size:contain;
-    margin: 0;
+    background-size:auto;
+    margin: 0; 
     padding: 0;
 }
-
 .box {
     margin-top: 40px;
-    width: 65%;
+    width: 90%;
     max-width: 1200px;
     border: 2px solid black;
     color: var(--white-color);
     background-image: url("../img/wallpaper2.jpg");
-    padding: 8px;
     justify-content: center;
     border-radius: 10px;
+    padding: 40px; 
     }
 .imgConstruction {
     width: 100%;
@@ -71,12 +69,12 @@ body {
     justify-content: center;
     }
 .nav > .box {
-    padding: 0px;
+    padding: 0;
     display: flex;
-    margin-top: 20px;
     background-image: none;
     width: 90%;
     border: none;
+    justify-content: center;
 }
 .nav-g {
     display:flex;
@@ -84,6 +82,14 @@ body {
     justify-content: center;
     gap:10px;
     font-size: var(--nav);
+}
+.nav-g a{
+    color: var(--white-color);
+    text-decoration: none;
+    animation-name: animation-nav;
+    animation-duration: 5s;
+    position:relative; 
+    animation-iteration-count: 1;
 }
 .nav-g div::after{ 
     content:" |";
@@ -93,6 +99,16 @@ body {
     border-radius: 1px;
     cursor: pointer;
 }
+@keyframes animation-nav {
+0% {
+    
+}
+50% {  
+    font-size: 17px;
+}
+100% {  
+}
+}
 
 /*SECTION PRESENTATION*/
 .presentation p {
@@ -101,7 +117,7 @@ body {
 .presentation {
     display: flex;
     width: 100%;
-    height: 500px;
+    height: 600px; 
     justify-content: center;
 }
 .presentation-box1 {
@@ -109,14 +125,13 @@ body {
     justify-content: center;
 }
 .presentation-box1 img {
-    margin-top: 40px;
-    width: 150px;
-    height: 150%;
+    max-width: 200px;
+    height: auto;
     border: 5px solid var(--white-color);
     border-radius: 50%;
 }
 .presentation-box2 {
-    margin-top: 2%;
+    margin-top: 20px;
     text-align: center;
     padding: 15px;
 }
@@ -125,14 +140,12 @@ body {
 }
 .presentation-box3{
     display:flex;
-    width: 70%;
-    margin: 0 auto; /*Centrar elementos*/
     justify-content: center;
     gap: 10px; /*Espaciado*/
 }
 .presentation-box3 img {
-    width: 25px;
-    height: 25px;   
+    width: 30px;
+    height: 30px;   
 }
 .presentation-box4 {
     margin-top: 2%;
@@ -143,12 +156,43 @@ body {
 }
 .presentation-box4 button {
     border: 1px solid black;
-    padding: 6px;
+    padding: 6px; 
+    width:100px;
+    height: 40px;
     font-size: var(--btn1);
+    font-weight: bold;
+    animation-name: mianimacion;
+    animation-delay: 2s;
+    animation-duration: 5s;
+    position: relative;
+    animation-direction: reverse;
+    animation-timing-function:initial /*La velocidad que se mueve mi objeto*/;
+    animation-iteration-count: 2;/*Para repetir animación la cantidad deseada*/
 }
 .presentation-box4 button:hover {
     background-color: var(--gray-color);
     cursor: pointer;
+}
+@keyframes mianimacion {
+0% { 
+    background-color: #09CBEA;
+} 
+25% {
+    background-color: red; 
+}
+50% {
+    background-color: aquamarine;
+}
+75%{
+    background-color: yellowgreen;
+}
+100%{
+    background-color: var(--gray-color);
+    left: 0px;
+    top:0px;
+    bottom: 100px;
+}
+
 }
 /*SECTION ABOUT*/
 .about {
@@ -157,9 +201,6 @@ body {
     justify-content: center;
     font-size: clamp(.9rem, 1vw, 1.2rem);  
 }   
-.about .box {
-    padding: 12px;
-}
 .about-row {
     display: flex;
     width: 100%;
@@ -175,14 +216,13 @@ body {
     width: 100%;
     flex-wrap: wrap;
     line-height: 32px;
-
-}
+    align-content: center;
+} 
 .about-box2 {
-    margin-top: 55px;
     width: 30%;
-    text-align: left;
+    text-align: left;  
     word-wrap: break-word;
-}
+} 
 .about-box2 img {
     width: 20px;
     height: 20px;  
@@ -191,7 +231,6 @@ body {
     list-style:none;
 }
 .about-box3 {
-    margin-top: 55px;
     word-wrap: break-word;   
     width: 70%;    
 }
@@ -211,7 +250,7 @@ body {
 .skill {
     display: flex;
     width: 100%;
-    height: 650px; 
+    height: 700px; 
     justify-content: center;
 }
 .column {
@@ -298,9 +337,14 @@ body {
     width: 100%;
     justify-content: center;
 }
+.experience-g {
+    display: flex;
+    justify-content: center;
+}
 .experience-box {
     text-align: left;
     padding: 20px;
+    width: 90%;
 }
 .company{
     display: flex;
@@ -345,26 +389,30 @@ body {
 .education {
     display: flex;
     width: 100%;
-    min-width: 300px;
-    min-height: 300px;
+    height: 400px; 
     justify-content: center;
+} 
+.education-g { 
+    width: 100%;
+    height: 300px;
+    padding: 20px;
+}
+.education-box {
+    display: flex;
+    flex-direction: column;
 }
 .education h3 {
     font-size: var(--h3);
 }
 .university{
     display: flex;
-    align-items: center;
     gap:10px;
-    margin-top: 20px;
+    margin-bottom: 20px;
 }
 .img_university {
     width:70px;
     height:70px;
 } 
-.education div {
-    padding: 10px;
-}
 .education p {
     font-size: 14px;
 }
@@ -409,7 +457,6 @@ body {
     grid-area: 1/2;
 }
 .portfolio-img2 img {
-    margin-top: 20px;
     width: 100%;   
     min-width: 235px;    
     min-height: 150px; 
@@ -430,12 +477,24 @@ body {
     width: 100%;
     justify-content: center;
 }
-.certification {
+.certifications-g {
+    width: 100%;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    align-content: center;
+    padding: 20px;
+}
+.certifications-box {
     display: flex;
     justify-content: flex-start;
-    margin-left: 20px;
+}
+.certification {
+    display: flex;
     gap:10px;
     margin-top: 20px;
+    margin-left: 60px;
+    list-style: none;
 }
 #certificados {
     display: none;
@@ -475,9 +534,6 @@ body {
     width:50px;
     height:50px;
 } 
-.certification {
-    list-style: none;
-}
 .certifications li {
     font-size: var(--median);
 }
@@ -504,21 +560,14 @@ body {
 .contact-g {
     display: flex;
     width: 100%;
-    height: 86%; 
     align-content: center;
-}
-.col-form {
-    display: flex;
-    width: 100%;
-    height: 100%;
 }
 .form {
     display: flex;
     width: 100%;
-    border-radius: 16px;
-    align-items: center;
     padding: 20px;
     gap:300px; 
+    align-content: center;
 }
 .form_input {
     font-family: inherit;
@@ -533,7 +582,7 @@ body {
     margin-top: 10px;
     resize: none;
     width: 100%;
-    height: 90px;
+    height: 150px; 
 }
 .form_cta {
     font-weight: bold;
@@ -542,7 +591,7 @@ body {
     height: 30px;
     width: 100%;
     text-align: center;
-}
+} 
 .form_cta:hover {
     background-color:var(--gray-color); 
     cursor: pointer;
@@ -553,7 +602,6 @@ body {
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: 100%;;
 }
 .col-map iframe {
     width: 90%;
@@ -607,6 +655,14 @@ footer p {
 .box {
      flex-direction: column;
  }
+ .nav > .box {
+    padding: 0px;
+    display: flex;
+    background-image: none;
+    width: 90%;
+    border: none; 
+    justify-content: center;     
+}
  .about-row {
     display: flex;
     font-size: 14px;
@@ -625,7 +681,7 @@ footer p {
 .skill {
     display: flex;
     width: 100%;
-    height: 950px;
+    height: 1050px;
     justify-content: center;
 }
 .column {
@@ -693,21 +749,20 @@ footer p {
     grid-template-columns: 100%;
     grid-template-rows: auto;  
     margin-top: 10px;
-    height: 850px;
-
-}
+    height: 750px; 
+} 
 .portfolio-img1 {
     grid-area:1/1;
 }
 .portfolio-img1 img {
-    width: 100%;   
+    width: 70%;   
     min-width: 235px;    
     min-height: 150px; 
     max-height:250px;
     border: 1px solid var(--gray-color);
 } 
 .portfolio-description1 {
-    margin-top: 20px;
+    margin-top: 0px;
     grid-area: 2/1;
 }
 .portfolio-img2 {
@@ -715,33 +770,41 @@ footer p {
     grid-area:3/1;
 }
 .portfolio-description2 {
-    margin-top: 20px;
+    margin-top: 0px;
     grid-area: 4/1;
 }
 .portfolio-img2 img {
-    width: 100%;   
+    width: 70%;   
     min-width: 235px;    
     min-height: 150px; 
     max-height:250px;
     border: 1px solid var(--gray-color);
-} 
-.contact .box {
-    display: inherit;
-    position: static;
-  }
-.contact-g {
-    margin-top: -50px;
+}
+.contact {
     display: flex;
     width: 100%;
-    height: 95%;
-    flex-wrap:wrap;
+    height: 600px;
+}
+.contact-g {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.form {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+}
+.col-form {
+    display: flex;
+    width: 100%;
+    align-content: center;
 }
 .col-map {
     display: flex; 
     width: 100%;
-    height: 100px; 
-    margin-top: -70px;
-    justify-content: center;
     align-items: center;
 }
 @media (max-width: 510px)
@@ -750,28 +813,55 @@ footer p {
   display: inherit;
   position: static;
   width:300px;
+  padding: 10px;
 }
 .about-row {
-    font-size: var(--small);
+    font-size: var(--smallx2); 
     flex-direction: column;
-    height: 350px;
+    height: 320px;
 }
 section .presentation {
     display: inherit; 
 }
 .presentation-box1 img {
-    margin-top: 0px;
-    width: 150px;
-    height: 100%;
+    min-width: 150px;
+    max-width: 200px;
+    height: auto;
     border: 5px solid var(--white-color);
     border-radius: 50%;
 }
-
-
+.experience-job {
+    font-size: var(--median);
+}
+.experience-activities {
+    font-size: var(--small);
+}
+.experience-location {
+    font-size: var(--smallx2); 
+}
+.education p {
+    font-size: 10px;
+}
+.education span {
+    font-size: 8px;
+}
+.certifications-g {
+    padding: 0px;
+}
+.certification {
+    margin-top: 20px;
+    margin-left: 10px;
+}
 /*
 ME FALTA:
 
--AGREGAR ANIMACIÓN AL PRECIONAR"cONTACTAME" PARA QUE SOLBRE SALGAN MIS DATOS PERSONALES.
+- AGREGAR ANIMACIÓN AL PRECIONAR"cONTACTAME" PARA QUE SOLBRE SALGAN MIS DATOS PERSONALES.
 - PARA MOVILES CREAR UN MENU DESPLEGABLE CON MI NAV
-- MI NAV ME LLEVE A LAS UBICACIONES MENCIONADAS
+- AGREGAR MI EXPERIENCIA DE DESARROLLADOR WEB CV
+- AGREGAR MI CV EN BLANCO PARA QUE SE DESCARGUE CON EL BOTON
+- 
+MANDARLO DE FORMA TRADICIONAL. 
+SUBIR MI PDF Y QUE EL BOTON LO DESCARGUE. 
+INCLLUIR EN MI EXPERIENCIA (MENTIRAS LO QUE HICE). 
+TERMINAR DE ARREGLAR.
 */

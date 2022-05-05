@@ -16,4 +16,3 @@ function ocultarCertificados() {
     document.getElementById('button-certification-off').style.display = 'none';
     document.getElementById('button-certification-on').style.display = 'block';
 } 
-/*YA SE ACTUALIZO?*/
