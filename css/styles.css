@@ -89,7 +89,7 @@ body {
     animation-name: animation-nav;
     animation-duration: 5s;
     position:relative; 
-    animation-iteration-count: 1;
+    animation-iteration-count: 2; 
 }
 .nav-g div::after{ 
     content:" |";
@@ -102,14 +102,13 @@ body {
 @keyframes animation-nav {
 0% {
     
-}
+} 
 50% {  
     font-size: 17px;
 }
 100% {  
 }
 }
-
 /*SECTION PRESENTATION*/
 .presentation p {
     font-size: clamp(1rem, 3vw, 1.5rem);
@@ -135,6 +134,18 @@ body {
     text-align: center;
     padding: 15px;
 }
+.btn-hidden  {
+    background-color: none;
+    color: var(--white-color);
+    width:100%;
+    border: 0px;
+    background-color:transparent;
+}
+.btn-hidden p 
+{   
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+}
 .presentation-box3-g{
     width: 100%;
 }
@@ -148,49 +159,59 @@ body {
     height: 30px;   
 }
 .presentation-box4 {
-    margin-top: 2%;
-    width: 100%;
     display: flex;
+    height: 80px;
     justify-content: center;
-    gap: 10px;
+    align-items: center;
+    align-content: center;
 }
-.presentation-box4 button {
-    border: 1px solid black;
-    padding: 6px; 
-    width:100px;
-    height: 40px;
-    font-size: var(--btn1);
+.button-box4 {
+    display: flex;
     font-weight: bold;
+    font-size: var(--btn1);
+    min-width: 100px;      
+    width: 14%; 
+    height: 35px; 
+    color: black;
+    border: 1px solid black;
+    background-color: var(--white-color);
+    text-decoration: none;
+    justify-content: center;
+    align-items: center;
     animation-name: mianimacion;
     animation-delay: 2s;
-    animation-duration: 5s;
-    position: relative;
+    animation-duration: 5s; 
+    position: relative; 
     animation-direction: reverse;
     animation-timing-function:initial /*La velocidad que se mueve mi objeto*/;
-    animation-iteration-count: 2;/*Para repetir animación la cantidad deseada*/
+    animation-iteration-count: 3;/*Para repetir animación la cantidad deseada*/
 }
-.presentation-box4 button:hover {
+.button-box4 a {
+}
+.button-box4:hover {
     background-color: var(--gray-color);
     cursor: pointer;
 }
+
 @keyframes mianimacion {
 0% { 
-    background-color: #09CBEA;
+    background-color: var(--white-color);
 } 
 25% {
-    background-color: red; 
+    background-color: var(--blue-color)
 }
 50% {
     background-color: aquamarine;
 }
 75%{
-    background-color: yellowgreen;
-}
-100%{
-    background-color: var(--gray-color);
+/*    background-color: aqua;*/
+} 
+100%{ 
+    background-color: var(--white-color);
     left: 0px;
     top:0px;
     bottom: 100px;
+    opacity: 100%;
 }
 
 }
@@ -304,8 +325,8 @@ body {
     left:-300px;  
     background-color:var(--blue-color);
     transition: var(--transition);
-    animation: skill-bar-fill 2s ease-in-out forwards;
-}
+    animation: skill-bar-fill 4s ease-in-out forwards; 
+} 
 .skills_bar--50::after{
     --skill-bar-length: 50%;
 }
@@ -326,7 +347,7 @@ body {
 }
 
 @keyframes skill-bar-fill {
-    to {
+    to { 
         transform: translateX(var(--skill-bar-length));
     }
 }
@@ -478,16 +499,14 @@ body {
     justify-content: center;
 }
 .certifications-g {
+    display: flex; 
+    flex-direction: column;
     width: 100%;
-    justify-content: center;
-    justify-items: center;
-    align-items: center;
-    align-content: center;
     padding: 20px;
 }
-.certifications-box {
+.mov-button {
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
 }
 .certification {
     display: flex;
@@ -496,12 +515,15 @@ body {
     margin-left: 60px;
     list-style: none;
 }
-#certificados {
+#certificados_profesionales {
+    display: none;
+}
+#certificados_personales {
     display: none;
 }
 #button-certification-on {
-    margin-top: 10px;
-    width:100%;  
+    margin-top:40px;
+    width:70%;  
     height: 36px; 
     border: 2px solid var(--white-color); 
     background-color: var(--white-color); 
@@ -516,8 +538,8 @@ body {
 }
 #button-certification-off {
     display: none;
-    margin-top: 10px;
-    width:100%;  
+    margin-top: 40px;
+    width:70%;  
     height: 36px;
     border: 2px solid var(--white-color); 
     background-color: var(--white-color); 
@@ -527,6 +549,42 @@ body {
     cursor: pointer;
 } 
 #button-certification-off:hover {
+    background-color: var(--gray-color);
+    border: 1px solid var(--gray-color);
+}
+.separator {
+    margin-top: 50px;
+    border:1px solid var(--gray-color);
+    width: 100%;
+}
+#button2-certification-on {
+    margin-top:40px;
+    width:70%;  
+    height: 36px; 
+    border: 2px solid var(--white-color); 
+    background-color: var(--white-color); 
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: var(--btn2);
+    cursor: pointer;
+} 
+#button2-certification-on:hover {
+    background-color: var(--gray-color);
+    border: 1px solid var(--gray-color);
+}
+#button2-certification-off {
+    display: none;
+    margin-top: 40px;
+    width:70%;  
+    height: 36px;
+    border: 2px solid var(--white-color); 
+    background-color: var(--white-color); 
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: var(--btn2);
+    cursor: pointer;
+} 
+#button2-certification-off:hover {
     background-color: var(--gray-color);
     border: 1px solid var(--gray-color);
 }
@@ -783,7 +841,7 @@ footer p {
 .contact {
     display: flex;
     width: 100%;
-    height: 600px;
+    height: 650px;
 }
 .contact-g {
     display: flex;
@@ -791,7 +849,7 @@ footer p {
     align-content: center;
     flex-wrap: wrap;
 }
-.form {
+    .form {
     display: flex;
     width: 100%;
     align-content: center;
@@ -852,13 +910,8 @@ section .presentation {
     margin-top: 20px;
     margin-left: 10px;
 }
-/*
-ME FALTA:
-- AGREGAR MI EXPERIENCIA DE DESARROLLADOR WEB CV
-- AGREGAR MI CV EN BLANCO PARA QUE SE DESCARGUE CON EL BOTON
-- 
-MANDARLO DE FORMA TRADICIONAL. 
-SUBIR MI PDF Y QUE EL BOTON LO DESCARGUE. 
-INCLLUIR EN MI EXPERIENCIA . 
-TERMINAR DE ARREGLAR.
-*/
+.contact {
+    display: flex;
+    width: 100%;
+    height: 550px;
+}
