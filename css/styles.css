@@ -467,8 +467,7 @@ body {
     display: grid;
     grid-template-columns: 50% 50%;
     grid-template-rows: 250px 250px;  
-    text-align: center;
-    height: 550px;
+   text-align: center;
 }
 .portfolio h3 {
     font-size: var(--h3);
@@ -485,6 +484,7 @@ body {
     min-height: 150px; 
     height:100%;
     border: 1px solid var(--gray-color);
+    object-fit: cover;
 } 
 .portfolio-img1 {
     margin-top: 20px;
@@ -500,6 +500,7 @@ body {
     min-height: 150px; 
     height:100%;
     border: 1px solid var(--gray-color);
+    object-fit:cover;
 }
 .portfolio-img2 {
     grid-area:2/2;
