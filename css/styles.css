@@ -2,7 +2,10 @@
 /*Tipografia*/
 --h1: clamp(1.6rem, 3vw, 2.5rem);/*26px min;*/ 
 --h2: 24px;  
---h3: 20px; 
+--h3: 24px;  
+--h4:20px;
+--h5: 12px;
+--h6: 10px; 
 --nav: 16px;
 --big: 18px;
 --median: 16px; 
@@ -374,55 +377,48 @@ body {
     display: flex;
     width: 100%;
     justify-content: center;
+height: auto;
 }
 .experience-g {
     display: flex;
     justify-content: center;
-}
-.experience-box {
-    text-align: left;
-    padding: 20px;
-    width: 90%;
-}
-.company{
-    display: flex;
-    align-items: center;
-    gap:10px;
-    margin-top: 20px;
+    flex-direction: column;
+    padding: 20px;  
 }
 .img_company {
     width:40px;
     height:40px;
-} 
-.experience-company {
-    display: inline-flex;
-    font-size: var(--big);
-    font-weight: bold;
 }
-.experience-company a {
-    color: var(--white-color); 
+.main-info{
+    margin-top: 20px;
+    display: flex;
+    gap:10px;
+    align-items: center;
 }
-.experience-job {
-    font-weight: bold;
+.position-info {
     margin-top: 10px;
-    font-size: var(--big);
-    list-style: none;
 }
-.experience-location {
-    font-size: var(--small); 
-    list-style: none;
+.main-info a { 
+    font-size: var(--h3);
+    color: var(--white-color);
 }
-.experience-time {
-    font-size: var(--smallx2);
-    list-style: none;
-    margin-bottom: 10px;
+.experience h4 {
+    font-size: var(--h4);
 }
-.experience-activities {
+.experience h5 {
+    font-size: var(--h5);
+    font-weight: 400;
+}
+.experience h6 {
+    font-size: var(--h6);
+    font-weight: 400;
+}
+.activities {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    margin-left: 25px; 
     font-size: var(--median);
-    list-style:circle;
 }
-
-
 /*SECTION EDUCATION*/
 .education {
     display: flex;
@@ -912,14 +908,8 @@ section .presentation {
     border: 5px solid var(--white-color);
     border-radius: 50%;
 }
-.experience-job {
-    font-size: var(--median);
-}
-.experience-activities {
+.activities {
     font-size: var(--small);
-}
-.experience-location {
-    font-size: var(--smallx2); 
 }
 .education p {
     font-size: 10px;
