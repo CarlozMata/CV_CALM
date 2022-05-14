@@ -197,8 +197,6 @@ body {
     animation-timing-function:initial /*La velocidad que se mueve mi objeto*/;
     animation-iteration-count: 3;/*Para repetir animación la cantidad deseada*/
 }
-.button-box4 a {
-}
 .button-box4:hover {
     background-color: var(--gray-color);
     cursor: pointer;
@@ -329,6 +327,10 @@ body {
 }
 .skills_item7 {
     grid-area: 4/1;
+}
+.skills_item8 {
+    padding-left: 15px;
+    grid-area: 4/2;
 }
 .skills_bar, 
 .skills_bar::after {
@@ -797,6 +799,11 @@ footer p {
 .skills_item7 {
     padding-bottom: 15px;
     grid-area: 7/1;
+}
+.skills_item8 {
+    padding-bottom: 15px;
+    padding-left: 0px;
+    grid-area: 8/1;
 }
 .skills_bar, 
 .skills_bar::after {
