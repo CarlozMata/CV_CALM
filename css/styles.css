@@ -102,7 +102,7 @@ body {
     position:relative; 
     animation-iteration-count: 2; 
 }
-.nav-g div::after{ 
+.nav-g div::after{  
     content:" |";
 }
 .nav-g div:hover {
