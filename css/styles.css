@@ -6,7 +6,7 @@
 --h4:20px;
 --h5: 12px;
 --h6: 10px; 
---nav: 16px;
+--nav: 15px;
 --big: 18px;
 --median: 16px; 
 --small: 12px; 
@@ -115,7 +115,7 @@ body {
     
 } 
 50% {  
-    font-size: 17px;
+    font-size: 16px;
 }
 100% {  
 }
