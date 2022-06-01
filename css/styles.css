@@ -488,7 +488,7 @@ height: auto;
 .portfolio-img1 {
     margin-top: 20px;
     grid-area:1/1;
-}
+} 
 .portfolio-description1 {
     margin-top: 80px;
     grid-area: 1/2;
@@ -499,7 +499,7 @@ height: auto;
     min-height: 150px; 
     height:100%;
     border: 1px solid var(--gray-color);
-    object-fit:cover;
+    object-fit:cover; 
 }
 .portfolio-img2 {
     grid-area:2/2;
