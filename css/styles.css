@@ -464,10 +464,10 @@ height: auto;
 }
 .portfolio-g {
     display: grid;
-    grid-template-columns: 50% 50%;
-    grid-template-rows: 250px 250px;  
-   text-align: center;
-}
+    grid-template-columns: 50% 50% 50%;
+    grid-template-rows: 250px 250px 250PX;  
+    text-align: center;
+} 
 .portfolio h3 {
     font-size: var(--h3);
 }
@@ -507,6 +507,21 @@ height: auto;
 .portfolio-description2 {
     margin-top: 80px;
     grid-area: 2/1;
+}
+.portfolio-img3 img {
+    width: 100%;   
+    min-width: 235px;    
+    min-height: 150px; 
+    height:100%;
+    border: 1px solid var(--gray-color);
+    object-fit:cover; 
+}
+.portfolio-img3 {
+    grid-area:3/1;
+}
+.portfolio-description3 {
+    margin-top: 80px;
+    grid-area: 3/2;
 }
 
 /*SECTION CERTIFICATIONS*/
@@ -829,32 +844,48 @@ footer p {
     grid-template-columns: 100%;
     grid-template-rows: auto;  
     margin-top: 10px;
-    height: 750px; 
 } 
 .portfolio-img1 {
     grid-area:1/1;
 }
 .portfolio-img1 img {
-    width: 70%;   
+    width: 70%;  
+    margin-top: 0px;
     min-width: 235px;    
     min-height: 150px; 
     max-height:250px;
     border: 1px solid var(--gray-color);
 } 
 .portfolio-description1 {
-    margin-top: 0px;
+    margin-top: 30px;
     grid-area: 2/1;
 }
 .portfolio-img2 {
-    margin-top: 10px;
+    margin-top: 50px;
     grid-area:3/1;
 }
 .portfolio-description2 {
-    margin-top: 0px;
+    margin-top: 30px;
     grid-area: 4/1;
 }
 .portfolio-img2 img {
     width: 70%;   
+    min-width: 235px;    
+    min-height: 150px; 
+    max-height:250px;
+    border: 1px solid var(--gray-color);
+}
+.portfolio-img3 {
+    margin-top: 170px;
+    grid-area:4/1;
+}
+.portfolio-description3 {
+    margin-top: 30px;
+    grid-area: 5/1;
+    margin-bottom: 50px;
+}
+.portfolio-img3 img {
+    width: 70%;    
     min-width: 235px;    
     min-height: 150px; 
     max-height:250px;
