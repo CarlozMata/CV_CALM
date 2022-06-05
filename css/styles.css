@@ -97,7 +97,7 @@ body {
     color: var(--white-color);
     text-decoration: none;
     animation-name: animation-nav;
-    animation-duration: 5s;
+    animation-duration: 3s;
     position:relative; 
     animation-iteration-count: 2; 
 }
@@ -189,8 +189,8 @@ body {
     justify-content: center;
     align-items: center;
     animation-name: mianimacion;
-    animation-delay: 2s;
-    animation-duration: 5s;  
+    animation-delay: 2s; 
+    animation-duration:3s;  
     position: relative; 
     animation-direction: reverse;
     animation-timing-function:initial /*La velocidad que se mueve mi objeto*/;
