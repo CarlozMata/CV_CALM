@@ -134,7 +134,7 @@ body {
     justify-content: center;
 }
 .presentation-box1 img {
-    max-width: 200px;
+    max-width: 200px; 
     height: auto;
     border: 5px solid var(--white-color);
     border-radius: 50%;
