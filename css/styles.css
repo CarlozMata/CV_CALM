@@ -522,6 +522,21 @@ height: auto;
     margin-top: 80px;
     grid-area: 3/2;
 }
+.portfolio-img4 img {
+    width: 100%;   
+    min-width: 235px;    
+    min-height: 150px; 
+    height:100%;
+    border: 1px solid var(--gray-color);
+    object-fit:cover; 
+}
+.portfolio-img4 {
+    grid-area:4/2;
+}
+.portfolio-description4 {
+    margin-top: 80px;
+    grid-area: 4/1;
+}
 
 /*SECTION CERTIFICATIONS*/
 .certifications {
@@ -911,6 +926,21 @@ footer p {
     min-height: 150px; 
     max-height:250px;
     border: 1px solid var(--gray-color);
+}
+.portfolio-img4 img {
+    width: 70%;    
+    min-width: 235px;    
+    min-height: 150px; 
+    max-height:250px;
+    border: 1px solid var(--gray-color);
+}
+.portfolio-img4 {
+    margin-top: 0px;
+    grid-area:6/1;
+}
+.portfolio-description4 {
+    margin-top: 50px;
+    grid-area: 7/1;
 }
 .contact { 
     display: flex;
