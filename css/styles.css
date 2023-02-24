@@ -875,7 +875,183 @@ footer p {
     transition: var(--transition);
     animation: skill-bar-fill 2s ease-in-out forwards;
 }
+.header_inicial_molde {
+    text-align: center;
+}
+.header_inicial_molde div {
+    color: white;
+    font-size: 14px;
+}
+.header_inicial_foto img {
+    height:120px;
+    width:120px;
+    border-radius: 50%;    
+}
 
+/*Header v2*/
+
+.header_presentacion {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-bottom: 1px solid #6E767A;
+    background-color: black;
+}
+
+.header_presentacion_molde {
+    display: flex;
+    text-decoration: none;
+    list-style: none;
+    height: 30px;
+    width: 80%;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_presentacion_molde div {
+    color:white;
+    font-size: 12px;
+    width: 33%;
+    text-align: center;
+}
+
+/*---------------------------------Contenido--------------------------------------------*/
+
+.contenido{
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid #6E767A;
+    height: 90px;
+    justify-content: space-evenly;
+    align-items: center;    
+}
+.contenido_molde{
+    display: flex;
+    width: 70%;    
+    height: 85%;
+    text-align: center;
+    align-items: center;
+}
+.contenido_molde div {
+    width: 25%;
+}
+
+/*---------------------------------Conocimientos y Habilidades--------------------------------------------*/
+
+.conocimientos_y_habilidades {
+    border-bottom: 1px solid #6e767a;
+    padding: 10px;
+}
+
+/*---------------------------------Experiencia--------------------------------------------*/
+
+.experiencia {
+    border-bottom: 1px solid #6e767a;
+    padding: 10px;
+}
+
+.experiencia h3{
+    margin-top: 30px;
+    padding: 0px;
+}
+
+.experiencia h4, h5, h6 {
+    margin: 3px;
+    margin-left: 10px;
+}
+
+/*---------------------------------Certificados--------------------------------------------*/
+.certificaciones {
+    border-bottom: 1px solid #6e767a;
+    padding: 10px;
+}
+.certificaciones h3 {
+    margin: 30px;
+    margin-left: 10px;
+}
+
+/*---------------------------------Proyectos--------------------------------------------*/
+
+.proyectos {
+    border-bottom: 1px solid #6E767A;
+    padding: 10px;
+}
+
+/*---------------------------------Footer--------------------------------------------*/
+
+
+footer{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 10px;
+    font-size: 12px;
+    background-color: black;
+    color: white;
+    padding: 15px;
+}
+
+footer a{
+    color: white;
+}
+
+.footer_contactame {
+    margin:auto;
+    font-size: 15px;
+    margin-top: -5px;
+}
+
+#contactame {
+    scroll-behavior:smooth;
+}
+
+@media (min-width: 800px) and (max-width: 940px)
+{
+    .grid-presentacion-rows {
+        width: 110%;
+ /*       background-color: red;*/
+                }
+    .grid-presentacion-columns {
+        width: 100%;
+/*        background-color:green;*/
+    }
+    .contenido {
+        width: 100%;
+/*        background-color: greenyellow;*/
+    }
+}
+@media screen and (max-width: 540px)
+{
+    .grid-contenido-columns-1 {
+        width:100%;
+/*        background-color:midnightblue;*/
+                }
+    .grid-contenido-columns-2 {
+        width: 90%;
+/*        background-color:navajowhite;*/
+    }
+    .grid-contenido-columns-3 {
+        width: 100%;
+/*        background-color:olive;*/
+    }
+    .grid-contenido-columns-4 {
+        width: 100%;
+/*        background-color:mediumturquoise;*/
+    }
+}
+
+/*
+
+
+ME FALTA:
+
+TERMINAR DE AGREGAR MIS CERTIFICADOS Y ACOMODARLOS
+ACOMODAR DONDE VAN A IR MIS PROYECTOS
+AGREGAR ANIMACIÓN AL PRECIONAR"cONTACTAME" PARA QUE SOLBRE SALGAN MIS DATOS PERSONALES.
+AGREGAR VARIABLES 
+
+
+*/
 .portfolio-g {
     display: grid;
     grid-template-columns: 100%;
