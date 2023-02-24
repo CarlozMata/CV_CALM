@@ -1,413 +1,475 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <!-- Google Tag Manager -->
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+    new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+    j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+    'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-PFRWG8G');</script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-PC4L4YEJL4"></script>
+    <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-PC4L4YEJL4');
+    </script>
+    <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="keywords" content="carlozmata, frontend, front-end, developer">
+    <meta name="description" content="Sitio Web Profesional de CarlozMata">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@300;500&family=Montserrat:wght@300;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <title>CV Carlos Mata</title>
+    <link rel="icon" href="./img/mifoto.png">
+    <title>CarlozMata</title>
 </head>
-<body>
-    <header>
-<!---aqui inicia mi nuevo header-->
-    <section class="header_inicial">
-        <section class="header_inicial_molde">
-            <div class="header_inicial_foto">
-                <img src="img/mifoto.jpg" alt="">
-            </div>
-            <div class="header_inicial_nombre">Carlos Alberto López Mata</div>
-            <div class="header_inicial_carrera">Ing. Sistemas Computacionales y Tecnologias de la Información</div>
-        </section>
+<body id="print">
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PFRWG8G"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<nav class="nav">
+<div class="box">
+    <div class="nav-g">
+        <div><a href="#acercaDeMi">Acerca de mi</a></div>
+        <div><a href="#habilidades">Habilidades</a></div>
+        <div><a href="#experiencia">Experiencia</a></div>
+        <div><a href="#educacion">Educación</a></div>
+        <div><a href="#portafolio">Portafolio</a></div>
+        <div><a href="#certificado">Certificados</a></div>
+        <div><a href="#contacto">Contacto</a></div>
+    </div>
+</div>
+</nav>
+<main>
+<!-- PRESENTATION -->
+    <section class="presentation">
+    <div class="box">
+        <div class="presentation-box1">
+        <img src="./img/mifoto.png" alt="Foto de Perfil">
+        </div>
+    <div class="presentation-box2">
+        <h1>Carlos Alberto López Mata</h1>
+        <button class="btn-hidden" onclick="generatePDF()"><p>Front-End Developer Jr</p></button>
+    </div>
+    <div class="presentation-box3-g">
+        <div class="presentation-box3">
+        <a href="https://github.com/CarlozMata" target="__blank"><img src="./img/redes_sociales/github.png" alt="Github"></a>
+        <a href="https://www.linkedin.com/in/carlosalbertolopezmata/" target="__blank"><img src="./img/redes_sociales/linkedin.png" alt="Linkedln"></a>
+        <a href="https://twitter.com/CarlozMata" target="__blank"><img src="./img/redes_sociales/twitter.png" alt="Twitter"></a>
+        <a href="https://carlozmata.com/" target="__blank"><img src="./img/redes_sociales/world.png" alt="Sitio Web"></a>
+        </div>
+    </div>
+    <div class="presentation-box4">
+        <a href="./pdf/CV_Carlos_Mata.pdf" class="button-box4" download="CV_Carlos_Mata.pdf">Descargar CV</a>
+    </div>
+    <div class="translate"><a href="./index_eng.html">Traducir a Ingles</a></div>
+</div>
     </section>
 
-<!------ Inicia el Header v2 ------>
+    <!-- ABOUT -->
 
-    <section class="header_presentacion">
-        <section class="header_presentacion_molde">
-            <div >Correo: Carlos_1992_@hotmail.com</div>
-            <div>Dirección: Mérida, Yucatán. México</div>
-            <div>Tel. 9931079507</div>
-        </section>
-    </section>
-
-<!------ Comienza el Contenido ------>
-<h2>Acerca de mi</h2>
-<section class="contenido">
-        <section class="contenido_molde">
-            <div class=columna1>
-                <a>Nacionalidad:</a><br>
-                <a>Lugar de Nacimiento:</a><br>
-                <a>Linkdin:</a>
+    <section class="about">
+        <div class="box">
+            <h2><a name="acercaDeMi">Acerca de mi</a></h2>
+            <div class="about-row">
+            <div class="about-box1">
+                <p>Hola! Soy Carlos Mata <br><br>
+                💼 Profesional, responsable, creativo, organizado con capacitación constante y apasionado de la Tecnología. Con más de 5 años de experiencia en el área de TI y gran fascinación con la programación tratando siempre mantenerme actualizado.<br><br>
+                💻He tenido la oportunidad de crear y administrar sitios web actualmente disponibles.
+                </p>
+                </div>
+            <div class="about-col">
+            <div class="about-box2">
+                <div><img src="./img/contacto/calendario.png" alt="Calendar">Edad</div>
+                <div><img src="./img/contacto/email.png" alt="Email">Correo</div>
+                <div><img src="./img/contacto/smartphone.png" alt="Phone">Telefono</div>
+                <div><img src="./img/contacto/map.png" alt="Ubication">Ubicación</div>
             </div>
-            <div class=columna2>
-                <a>Mexicano</a><br>
-                <a>Villahermosa, Tabasco</a><br>
-                <a href="https://www.linkedin.com/in/carlos-mata-14895b14a/"target="blank">https://www.linkedin.com/CarlozMata</a>
+            <div class="about-box3">
+                <div>29</div>
+                <div><a href="mailto:"carlos_1992_@hotmail.com">carlos_1992_@hotmail.com</a></div>
+                <div><a href="tel:"9931079507>9931079507</a></div>
+                <div>Mérida, Yuc. Mexico.</p></div>
             </div>
-            <div class=columna3>
-                <a>Educación:</a><br>
-                <a>Universidad:</a><br>
-                <a>GitHub:</a>
-            </div>
-            <div class=columna4>
-                <a>Estudios Concluidos (2013-2016)</a><br>
-                <a>Instituto de Estudios Universitarios IEU</a><br>
-                <a href="https://github.com/Carlozmata92" target="blank">https://github.com/CarlozMata92</a>
-            </div>
-        </section>
-    </section>
-
-
-<!--- BORRAR ESTE CONTENIDO
-<section class="contenido">
-    <h2>Acerca de mi</h2>
-    <div class="grid-contenido-columns-informacionpersonal">
-        <div class="grid-contenido-columns-1">
-            <p>Nacionalidad:</p>
-            <p>Lugar de Nacimiento:</p>
-            <br/>
-            <p>Linkedin:</p>
         </div>
-        <div class="grid-contenido-columns-2">
-            <p>Mexicano</p>
-            <p>Villahermosa, Tabasco.</p>
-            <br/>
-            <a href="https://www.linkedin.com/in/carlos-mata-14895b14a/"target="blank">https://www.linkedin.com/CarlozMata</a>
-            <br/>
-            <br/>
-        </div>
-        <div class="grid-contenido-columns-3">
-            <p>Educación:</p>
-            <p>Universidad:</p>
-            <br/>
-            <p>GitHub:</p>
-        </div>
-        <div class="grid-contenido-columns-4">
-            <p>Estudios Concluidos (2013-2016)</p>
-            <p>Instituto de Estudios Universitarios IEU</p>
-            <br/>
-            <a href="https://github.com/Carlozmata92" target="blank">https://github.com/CarlozMata92</a>
         </div>
     </div>
 </section>
---->
-<!------ Comienza Conocimientos y Habilidades ------>
-
-<section class="conocimientos_y_habilidades">
-    <h2>Conocimientos y Habilidades</h2>
-    <ul>
-        <li>Git, GitHub, Visual Studio Code.</li>
-        <li>Administración de cuentas de valor (CORPORATIVAS).</li>
-        <li>Apertura y desarrollo de cuentas B2B (Business-to-Business).</li>
-        <li>Scouting de Clientes potenciales asi como seguimiento y apertura para ejecutivos de cuentas clave.</li>
-        <li>Elaboración de Cuentas internas y externas en sistemas empresariales.</li>
-        <li>Manejo de Sell in Sell out.</li>
-        <li>Ventas Run Rate.</li>
-        <li>Atención al cliente.</li>
-        <li>Service Desk para Empresas.</li>
-        <li>Trabajo en equipo y bajo presión.</li>
-        <li>Seguimiento a oportunidades y desarrollo en conjunto con ejecutivos de cuentas corporativas.</li>
-    </ul>
+<!-- SKILLS -->
+<section class="skill">
+    <div class="box">
+        <h2><a name="habilidades">Habilidades</a></h2>
+        <div class="column">
+            <div class="skills_item1">
+                <p class="skills_tech">HTML5</p>
+                <div class="skills_bar skills_bar--90"></div>
+            </div>
+            <div class="skills_item2">
+                <p class="skills_tech">CSS3</p>
+                <div class="skills_bar skills_bar--70"></div>
+            </div>
+            <div class="skills_item3">
+                <p class="skills_tech">JavaScript</p>
+                <div class="skills_bar skills_bar--60"></div>
+            </div>
+            <div class="skills_item4">
+                <p class="skills_tech">Git</p>
+                <div class="skills_bar skills_bar--80"></div>
+            </div> 
+            <div class="skills_item5">
+                <p class="skills_tech">Adobe Photoshop CS6</p>
+                <div class="skills_bar skills_bar--60"></div>
+            </div>
+            <div class="skills_item6">
+                <p class="skills_tech">Linux</p>
+                <div class="skills_bar skills_bar--70"></div>
+            </div>
+            <div class="skills_item7">
+                <p class="skills_tech">Office 365</p>
+                <div class="skills_bar skills_bar--100"></div>
+            </div>
+            <div class="skills_item8">
+                <p class="skills_tech">Wordpress</p>
+                <div class="skills_bar skills_bar--80"></div>
+            </div>
+        </div>
+        <br><h2>Aptitudes</h2>
+        <div class="column">
+            <div class="skills"></div>
+                <div class="skills_item1">
+                    <p class="skills_tech">Teamwork</p>
+                <div class="skills_bar skills_bar--80"></div>
+            </div>
+            <div class="skills_item2">
+                <p class="skills_tech">Service Desk</p>
+                <div class="skills_bar skills_bar--80"></div>
+            </div>
+            <div class="skills_item3">
+                <p class="skills_tech">TI</p>
+                <div class="skills_bar skills_bar--70"></div>
+        </div>
+        </div>
+        <br><h2>Idiomas</h2>
+        <div class="column">
+            <div class="skills"></div>
+                <div class="skills_item1">
+                <p class="skills_tech">Español</p>
+            <div class="skills_bar skills_bar--100"></div>
+            </div>
+            <div class="skills_item2">
+                <p class="skills_tech">Ingles: B1</p>
+                <div class="skills_bar skills_bar--50"></div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- EXPERIENCE -->
+<section class="experience">
+    <div class="box">
+        <h2><a name="experiencia"></a>Experiencia</a></h2>
+        <div class="experience-g">
+            <!--FREELANCE-->
+            <div class="main-info">
+                <img class="img_company"src="./img/company/FREELANCE.png" alt="Logotipo IMO">
+                <h3><a href="http://www.heladosmingos.com/" target="__blank">MINGOS</a></h3>
+            </div>
+            <div class="position-info">
+                    <h4>Desarrollador Web</h4>
+                    <h5>Mérida, Yucatán, México.</h5>
+                    <h6>Profesional Independiente / Febrero 2022 - Actualidad</h6>
+            </div>
+            <div class="activities">
+                <ul>
+                    <li>Presentación de diseños</li>
+                    <li>Creación de Sitio Web con HTML, CSS y JavaScript</li>
+                    <li>Manejo de ramas en Git/Github</li>
+                    <li>Edición y adaptación de Imágenes con Photoshop</li>
+                    <li>Adquisición de Dominio</li>
+                    <li>Activación de Sitio web en linea</li>
+                    <li>Vinculación con Google Analytics</li>
+                    <li>Administración de Sitio Web</li>
+                </ul>
+            </div>
+            <!--INTERNET MOVIL-->
+            <div class="main-info">
+                <img class="img_company"src="./img/company/IMO.png" alt="Logotipo IMO">
+                <h3><a href="http://www.imoti.mx/" target="__blank">IMO TI</a></h3>
+            </div>
+            <div class="position-info">
+                    <h4>Inside Sales Representative</h4>
+                    <h5>Mérida, Yucatán, México.</h5>
+                    <h6>Jornada completa / agosto 2019 - julio 2022. 3 años</h6>
+            </div>
+            <div class="activities">
+                <ul>
+                    <li>Elaboración de Cotizaciones y Propuestas de TI</li>
+                    <li>Dimensionamiento y Comercialización de soluciones Enterprise</li>
+                    <li>Detección de nuevas Oportunidades de Negocio</li>
+                    <li>Prospección de nuevas Cuentas en Sureste</li>
+                    <li>Relacionamiento con Cartera de Clientes</li>
+                    <li>Negociación con Proveedores</li>
+                    <li>Seguimiento de Ordenes de Compras</li>
+                    <li>Seguimiento de Inventarios</li>
+                    <li>Visita y Llamadas a Clientes para Seguimientos</li>
+                    <li>Atención a Clientes</li>
+                    <li>Elaboración de documentación para proyectos</li>
+                    <li>Identificación de las especificaciones técnicas de los productos</li>
+                    <li>Entrenamientos de la marca para Partners y Mayoristas</li>
+                    <li>Certificaciones en Marcas: DELL, VMWARE Y VEEAM</li>
+                </ul>
+            </div>
+            <!--LB SISTEMAS-->
+            <div class="main-info">
+            <img class="img_company"src="./img/company/LB.png" alt="Logotipo LB SISTEMAS">
+            <h3><a href="https://www.lbsistemas.com.mx/" target="__blank">LB SISTEMAS</a></h3>
+            </div>
+        <div class="position-info">
+            <h4>Inside Sales</h4>
+            <h5>Mérida, Yucatán, México.</h5>
+            <h6>Jornada completa / abril 2019 - julio 2019. 4 meses</h6>
+        </div>
+        <div class="activities">
+            <ul>
+                <li>Prospección de nuevas Cuentas</li>
+                <li>Desarrollo de Cuentas</li>
+                <li>Elaboración de Cotizaciones y Propuestas de TI</li>
+                <li>Interacción con Clientes y Proveedores</li>
+                <li>Visita y Llamadas a Clientes</li>
+            </ul>
+        </div>
+            <!--LA RED CORPORATIVO-->
+            <div class="main-info">
+                <img class="img_company"src="./img/company/LARED.png" alt="Logotipo LA RED">
+                <h3><a href="https://www.lared.mx/" target="__blank">LA RED CORPORATIVO</a></h3>
+            </div>
+        <div class="position-info">
+            <h4>Inside Sales</h4>
+            <h5>Villahermosa, Tabasco, México.</h5>
+            <h6>Jornada completa (2 años 8 meses) / septiembre 2017 - marzo 2019. 1 año 7 meses</h6>
+        </div>
+            <div class="activities">
+            <ul>
+                <li>Elaboración de Cotizaciones y Propuestas de TI.</li>
+                <li>Interacción con Proveedores y Clientes.</li>
+                <li>Apoyo inmediato a Ejecutivos de ventas.</li>
+                <li>Elaboración de documentación para proyectos.</li>
+                <li>Identificación de las especificaciones técnicas de los productos.</li>
+                <li>Dimensionamiento de soluciones Enterprise.</li>
+                <li>Entrenamientos de la marca para Partners y Mayoristas.</li>
+                <li>Certificaciones en Marca: DELL y TRIPPLITE.</li>
+                <li>Elaboración de Licitaciones publicas y privadas.</li>
+                <li>Diseño de banner publicitario para correos.</li>
+                <li>Diseños de Marketing para correo y Sitio Web.</li>
+            </ul>
+        </div>
+        <h4>Tech Support</h4>
+        <h5>Villahermosa, Tabasco, México.</h5>
+        <h6>Jornada completa / agosto 2016 - agosto 2017. 1 año 1 mes</h6>
+    <div class="activities">
+        <ul>
+            <li>Atención a Clientes.</li>
+            <li>Administración de Mesa de Servicio.</li>
+            <li>Garantías de equipos Dell.</li>
+            <li>Certificaciones en Marca: DELL y TRIPPLITE.</li>
+            <li>Resolución de problemas a equipos de TI dentro de las instalaciones.</li>
+            <li>Diagnósticos y Reparación de equipos de cómputo e impresoras.</li>
+            <li>Mantenimiento preventivo y correctivo de equipos de computo e impresoras.</li>
+            <li>Diseños de Marketing para correo y Sitio Web.</li>
+        </ul>
+    </div>
+        </div>
+    </div>
 </section>
 
-<!------ Comienza el Experiencia ------>
-
-<section class="experiencia">
-    <h2>Experiencia</h2>
-    <h3>GRUPO IMO INTERNET MOVIL S DE R.L. DE C.V.</h3>
-    <h4>Inside Sales Representative ISR</h4>
-    <h5>01/Agosto/2019 - Actual</h5>
-    <h6>Tel: 999-927-7938 / Jefe Directo: Ing. Ivan Arellanes Dorantes.</h6>
-    <ul>
-        <li>Elaboración de Cotizaciones y Propuestas de TI.</li>
-        <li>Detección de nuevas Oportunidades de Negocio.</li>
-        <li>Prospección de nuevas Cuentas en Sureste.</li>
-        <li>Relacionamiento con Cartera de Clientes.</li>
-        <li>Negociación con Proveedores.</li>
-        <li>Seguimiento de Ordenes de Compras.</li>
-        <li>Seguimiento de Inventarios.</li>
-        <li>Visita y Llamadas a Clientes para Seguimientos.</li>
-        <li>Atención a Clientes.</li>
-        <li>Certificaciones con partner y Mayoristas.</li>
-        <li>Certificaciones en Marcas: Dell, Vmware y Veeam.</li>
-    </ul>
-
-    <h3>LB SISTEMAS (Mérida Yucatán)</h3>
-    <h4>Inside Sales Representative ISR</h4>
-    <h5>Abril - Julio 2019</h5>
-    <h6>Tel: 55 8686 1901 / Jefe Directo: Ing. Jordy Jackson.</h6>
-    <ul>
-        <li>Prospección de nuevas Cuentas.</li>
-        <li>Desarrollo de cuentas clave para Ejecutivos.</li>
-        <li>Elaboración de Cotizaciones y Propuestas de TI.</li>
-        <li>Atención al cliente.</li>
-        <li>Visita y prospeccion a Clientes.</li>
-    </ul>
-
-    <h3>LA RED CORPORATIVO. (Villahermosa Tabasco)</h3>
-    <h4>Technical Support (01/08/16 – 01/08/17)</h4>
-    <h4>Inside Sales Representative ISR (01/08/17 – 01/03/19 ). </h4>
-    <h6>Tel: 993 207 7659 / Jefe Directo: Lic. Leonardo guerrero.</h6>
-    
-    <h4>TECHNICAL SUPPORT</h4>
-    <ul>
-        <li>Administración de Mesa de Servicio.</li>
-        <li>Garantías de equipos Dell.</li>
-        <li>Certificaciones en Marca: Dell Y Tripplite.</li>
-        <li>Resolución de problemas a equipos de TI dentro de las instalaciones.</li>
-        <li>Diagnósticos y Reparación de equipos de cómputo e impresoras.</li>
-        <li>Mantenimiento  preventivo  y  correctivo  de  equipos  de  cómputo  e impresoras.</li>
-    </ul>
-
-    <h4>INSIDE SALES REPRESENTATIVE</h4>
-    <ul>
-        <li>Elaboración de Cotizaciones y Propuestas de TI.</li>
-        <li>Interacción con Proveedores y Clientes.</li>
-        <li>Apoyo inmediato a Ejecutivos de ventas.</li>
-        <li>Entrenamientos de la marca para Partners y Mayoristas.</li>
-        <li>Certificaciones en Marca: Dell y Tripplite.</li>
-        <li>Elaboración de Licitaciones públicas y privadas.</li>
-    </ul>
+<!-- EDUCATION -->
+<section class="education">
+    <div class="box">
+        <h2><a name="educacion">Educación</a></h2>
+        <div class="education-g">
+        <div class="education-box">
+            <div class="university"><img class="img_university"src="./img/company/platzi.png" alt="logo_platzi"><h3>Platzi
+            <p>Desarrollo Web, Desarrollo de páginas web, contenido digital/multimedia y recursos informáticos.</p>
+            <span>Enero 2021 - Actualidad 2022</span></h3>
+            </div>
+        <div class="university"><img class="img_university"src="./img/company/ieu.png" alt="logo_ieu"><h3>IEU Universidad
+            <p>Ingeniero en Sistemas y Tecnologías de la Información, Tecnología informática/Tecnología de sistemas informáticos</p>
+            <span>2013 - 2016</span></h3>
+        </div>
+        </div>
+        </div>
+    </div>
 </section>
-
-<!------ Comienza el Certificaciones ------>
-
-<section class="certificaciones">
-    <h2>Certificaciónes</h2>
-
-    <h3>Profesional</h3>
-    <ul>
-        <li><a><b>Curso Básico de Algoritmos y Pensamiento Lógico</b></a>
-            <br/><a><b>Platzi</b></a>
-            <br/>
-            <a href="https://platzi.com/p/CarlozMata/curso/2218-pensamiento-logico/diploma/detalle/" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Curso Básico de Javascript </b></a>
-            <br/><a><b>Platzi</b></a>
-            <br/>
-            <a href="https://platzi.com/p/CarlozMata/curso/1814-basico-javascript/diploma/detalle/" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Curso de Computación Básica</b></a>
-            <br/><a><b>Platzi</b></a>
-            <br/>
-            <a href="https://platzi.com/p/CarlozMata/curso/1741-computacion-basica/diploma/detalle/" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Curso Definitivo de HTML y CSS</b></a>
-            <br/><a><b>Platzi</b></a>
-            <br/>
-            <a href="https://platzi.com/p/CarlozMata/curso/2008-html-css/diploma/detalle/" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Curso de Introducción a la Web: Historia y Funcionamiento de Internet</b></a>
-            <br/><a><b>Platzi</b></a>
-            <br/>
-            <a href="https://platzi.com/p/CarlozMata/curso/2053-introweb/diploma/detalle/" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Curso de Prework: Configuración de Enterno de Desarrollo en Windows</b></a>
-            <br/><a><b>Platzi</b></a>
-            <br/>
-            <a href="https://platzi.com/p/CarlozMata/curso/2042-prework-windows/diploma/detalle/" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Curso de Programación Basica</b></a>
-            <br/><a><b>Platzi</b></a>
-            <br/>
-            <a href="https://platzi.com/p/CarlozMata/curso/1050-programacion-basica/diploma/detalle/" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Curso Práctico de HTML y CSS</b></a>
-            <br/><a><b>Platzi</b></a>
-            <br/>
-            <a href="https://platzi.com/p/CarlozMata/curso/1758-html-practico/diploma/detalle/" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Curso Práctico de Maquetación en CSS</b></a>
-            <br/><a><b>Platzi</b></a>
-            <br/>
-            <a href="https://platzi.com/p/CarlozMata/curso/1744-practico-css/diploma/detalle/" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Curso Profesional de Git y Github</b></a>
-            <br/><a><b>Platzi</b></a>
-            <br/>
-            <a href="https://platzi.com/p/CarlozMata/curso/1557-git-github/diploma/detalle/" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <h3>Personal</h3>
-    <ul>
-        <li><a><b>Productividad Personal</b></a>
-            <br/><a><b>Google</b></a>
-            <br/><a>ID de la credencial: WQ3 JDP W2X</a><br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <h3>Laboral</h3>
-    <ul>
-        <li><a><b>Client Data Security 2020</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: YW56F1E6NJFEQ39V</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Core Client Credential 2020</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: </b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Workstation Credential 2020</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: 5D3X39F6MM4Q1S9K</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Data Center Portfolio Credential 2019</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: QLQKCFBTENQ4Q9CP</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Networking Credential 2019</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: TJYBDQCT3FE1QWWB</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Data Protection Credential 2019</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: CTYBDEXTMFE415CC</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Core Client Credential 2019</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: EXMGGEEZEE1DGH</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Workstation Credential 2019</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: B0ENDB163BV1QV93</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Veeam Certified Veeam Sales Profesional</b></a>
-            <br/><a><b>Veeam</b></a>
-    </ul>
-    <ul>
-        <li><a><b>Client Data Security Credential 2018</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: P81B4YJZL2V11E3E</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Cloud Client-Computing Credential 2018</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: 6V1JQ2NRL1FQ1R38</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Data Center Portfolio Credential 2018</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: 4BFDB39ZLEF41WWJ</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Core Client Credential 2018</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: F6MJBK7RLB4E1HW2</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Core Client Credential 2018</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: X6E2F6KZL1VE18K8</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Sales: Workstation Credential 2018</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: HBGJBP2TJ1VQ1G33</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>SE: Workstation Credential 2018</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: C6221656J2BE1J32</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Marketing Expert Credential 2017</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: ZLZDG25Z2BBE1W3P</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Core Client Credential 2017</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: STFKF0MRDJF41PS8</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Workstation Credential 2017</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: S6P2E9YRBF44QLK7</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Cloud Client-Computing Credential 2017</b></a>
-            <br/><a><b>Dell</b></a>
-            <br/><a><b>ID del a Credencial: B6PCF9ZDN4QQJ3B</b></a>
-            <br/>
-            <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="_blank">Ver Certificado</a></li>
-    </ul>
+<!-- PORTFOLIO -->
+<section class="portfolio">
+    <div class="box">
+        <h2><a name="portafolio">Portafolio</a></h2>
+    <div class="portfolio-flex">
+    <div class="portfolio-g">
+        <div class="portfolio-img1"><img src="./img/portafolios/cv800x430px.jpg" alt="logo_portafolio1"></div> 
+        <div class="portfolio-description1">
+            <h3>SITIO WEB PERSONAL PROFESIONAL</h3>
+            <p>Creación de Sitio Web para fines profesionales</p>
+            <p>HTML5, CSS3, JavaScript, Git/Github</p>
+            <a href="https://carlozmata.com/">https://carlozmata.com/</a>
+        </div>
+        <div class="portfolio-img2"><img src="./img/portafolios/mingos800x430px.jpg" alt="logo_portafolio2"></div>
+        <div class="portfolio-description2">
+        <h3>HELADOS MINGOS</h3>
+        <p>Sitio Web para Small Business del giro de Postres</p>
+        <p>HTML5, CSS3, JavaScript, Git/Github, Photoshop</p>
+        <a href="https://carlozmata.github.io/Mingos/">https://heladosmingos.com/</a>
+        </div><!--ESTO ES NUEVO -->
+        <div class="portfolio-img3"><img src="./img/portafolios/cerrada800x430px.png" alt="logo_portafolio3"></div> 
+        <div class="portfolio-description3">
+            <h3>SITIO WEB RESIDENCIAL</h3>
+            <p>Creación de Sitio Web con fines informativos</p>
+            <p>WordPress, CSS3, JavaScript, Elementor, FileZilla</p>
+            <a href="https://cerradahortensias.com">https://cerradahortensias.com</a>
+        </div>
+        <div class="portfolio-img4"><img src="./img/portafolios/pruebajs800x430px.jpg" alt="logo_portafolio4"></div> 
+        <div class="portfolio-description4">
+            <h3>Practica JS</h3>
+            <p>Pagina web para practicar JavaScript y CSS3</p>
+            <p>HTML5 / CSS3 / JavaScript</p>
+            <a href="https://carlozmata.github.io/Practica_JS/">https://carlozmata.github.io/Practica_JS/</a>
+        </div>
+        </div>
+    </div>
+    </div>
 </section>
-
-<!------ Comienza el Proyectos ------>
-
-<section class="proyectos">
-    <h2>Proyectos</h2>
-    <ul>
-        <li><a><b>Proyecto mi CV </b></a>
-            <br/>
-            <a href="https://carlozmata92.github.io/CV_CALM/" target="_blank">Ver Pagina</a></li>
-    </ul>
-    <ul>
-        <li><a><b>Proyecto Paleteria Mingos </b></a>
-            <br/>
-            <a href="https://carlozmata92.github.io/Proyecto_Mingos/" target="_blank">Ver Pagina</a></li>
-    </ul>
+<!-- CERTIFICATIONS -->
+<section class="certifications">
+    <div class="box">
+    <h2><a name="certificado">Certificados Profesionales<br><br></a></h2>
+    <div class="certifications-g">
+        <div class="certifications-box">
+        <ul>
+<!--51-->   <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Sistemas de Diseño<p>Platzi</p><span>Expedición: julio 2022</span><p>ID: 2e026835-ece1-4e88-841c-acc2a6704fd9 ➟ <a href="https://platzi.com/p/CarlozMata/curso/1420-course/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">ECMASCRIPT 6+<p>Platzi</p><span>Expedición: junio 2022</span><p>ID: ec49cf1e-f4de-4d1f-b0b2-6fb4b04b0f9 ➟ <a href="https://platzi.com/p/CarlozMata/curso/1815-course/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Gestión de Dependencias y Paquetes con NPM<p>Platzi</p><span>Expedición: junio 2022</span><p>ID: e9ff81a9-9003-44ba-b5be-eb1f2824b025 ➟ <a href="https://platzi.com/p/CarlozMata/curso/1763-course/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/google.jpg" alt="logo_google">Introducción al Desarrollo Web: HTML y CSS<p>Google</p><span>Expedición: junio 2022</span><p>ID: 9SS MFG 85M ➟ <a href="https://learndigital.withgoogle.com/activate/validate-certificate-code" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Single Page Application con JavaScript<p>Platzi</p><span>Expedición: junio 2022</span><p>ID: 08960b38-7c23-448f-bb0-02a4d6d31c76 ➟ <a href="platzi.com/p/CarlozMata/curso/1787-spa-javascript/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+        <div id="certificados_profesionales">
+<!--46-->   <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Programación Orientada a objetos con JavaScript<p>Platzi</p><span>Expedición: junio 2022</span><p>ID: 1133073b-279a-48a9-9580-v16v7b52835f ➟ <a href="https://platzi.com/p/CarlozMata/curso/2332-course/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Asincronismo con Javascript<p>Platzi</p><span>Expedición: mayo 2022</span><p>ID: 43e9fb7e-6291-4376-975f-52f9ba67b49b ➟ <a href="https://platzi.com/p/CarlozMata/curso/1789-course/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Fundamentos de Javascript 2018<p>Platzi</p><span>Expedición: mayo 2022</span><p>ID: Of4eb8b-1e26-4552-9a6c-04dab6c4276d ➟ <a href="https://platzi.com/p/CarlozMata/curso/1339-fundamentos-javascript-2018/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Responsive Design: Maquetación Mobile First<p>Platzi</p><span>Expedición: mayo 2022</span><p>ID:  ➟ <a href="https://platzi.com/p/CarlozMata/curso/2030-course/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Closures y Scope en JavaScript<p>Platzi</p><span>Expedición: abril 2022</span><p>ID: 4c1404cd-7ab5-44b0-82da-643cdddaef5 ➟ <a href="https://platzi.com/p/CarlozMata/curso/1807-scope/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Flujo de Desarrollo Moderno CodeStream<p>Platzi</p><span>Expedición: abril 2022</span><p>ID: 1be56e-14-8abf-452d-8f91-53d6ccc4efea ➟ <a href="https://platzi.com/p/CarlozMata/curso/2157-desarrollo-moderno-codestream/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+<!--40-->   <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Fundamentos de Ingeniería de Software<p>Platzi</p><span>Expedición: abril 2022</span><p>ID: 5b77c72a-0720-43b5-ba25-f0170bc38458 ➟ <a href="https://platzi.com/p/CarlozMata/curso/1098-ingenieria/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Prework: Configuración de Entorno de Desarrollo en Linux<p>Platzi</p><span>Expedición: abril 2022</span><p>ID: b6ac87ca-6f47-4737-942d-0b3bb2f4098 ➟ <a href="https" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Programación Orientada a Objetos<p>Platzi</p><span>Expedición: abril 2022</span><p>ID: 616ef68a-1328-433b-aca1-d100449b8e7b ➟ <a href="https://platzi.com/p/CarlozMata/curso/1474-oop/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Computación Básica<p>Platzi</p><span>Expedición: marzo 2022</span><p>ID: 09c732cc-76cf-4a2e-be90-bcdbf68c995a ➟ <a href="https://platzi.com/p/CarlozMata/curso/2793-computacion-basica/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Introducción a Terminal y Línea de Comandos 2019<p>Platzi</p><span>Expedición: marzo 2022</span><p>ID: 0f02caaa-4284-41ae-87ff-5f3691ffe1bf ➟ <a href="https://platzi.com/p/CarlozMata/curso/1748-terminal-2019/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Introducción a la Terminal y Línea de Comandos 2022<p>Platzi</p><span>Expedición: marzo 2022</span><p>ID: 45c7b722-2004-4b9b-96c2-4e552fc92525 ➟ <a href="https://platzi.com/p/CarlozMata/curso/2292-terminal/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Práctico de JavaScript<p>Platzi</p><span>Expedición: marzo 2022</span><p>ID: 6b43a5f5-e00f-4652-8fc4-87bab637ebb5 ➟ <a href="https://platzi.com/p/CarlozMata/curso/2327-course/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Curso Práctico de FrontEnd Developer<p>Platzi</p><span>Expedición: febrero 2022</span><p>ID: 75d48062-bf3d-4726-911a-79952d92c310 ➟ <a href="https://platzi.com/p/CarlozMata/curso/2477-frontend-developer-practico/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">FrontEnd Developer<p>Platzi</p><span>Expedición: noviembre 2021</span><p>ID: 369b09df-1509-4d80-a3e3-451245fb2eb6 ➟ <a href="https://platzi.com/p/CarlozMata/curso/2467-frontend-developer/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Maquetación en CSS<p>Platzi</p><span>Expedición: septiembre 2021</span><p>ID: 392cce-4a-b745-463c-b03a-5548a3ed73cc ➟ <a href="https://platzi.com/p/CarlozMata/curso/1744-practico-css/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Básico de Javascript<p>Platzi</p><span>Expedición: julio 2021</span><p>ID: 412d8e-4a-23e3-4a98-8eab-650f0eec2b18 ➟ <a href="https://platzi.com/p/CarlozMata/curso/1814-basico-javascript/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Profesional de GIT y GITHUB<p>Platzi</p><span>Expedición: mayo 2021</span><p>ID: 09d7fc25-f0aa-4645-ab15-5b2bb1889d78 ➟ <a href="https://platzi.com/p/CarlozMata/curso/1557-git-github/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Básico de Algoritmos y Pensamiento Lógico<p>Platzi</p><span>Expedición: abril 2021</span><p>ID: 8fff9358-87ec-4418-b39e-e0c3a5ffe906 ➟ <a href="https://platzi.com/p/CarlozMata/curso/2218-pensamiento-logico/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Definitivo de HTML y CSS<p>Platzi</p><span>Expedición: abril 2021</span><p>ID: 370b8f64-d4c4-4351-912d-f11bbd9fac3a ➟ <a href="https://platzi.com/p/CarlozMata/curso/2008-html-css/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Práctico de HTML y CSS<p>Platzi</p><span>Expedición: abril 2021</span><p>ID: 9e0add3f-ecbd-4ae5-b78-ca4bc6194fd9 ➟ <a href="https://platzi.com/p/CarlozMata/curso/1758-html-practico/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Programación Básica<p>Platzi</p><span>Expedición: marzo 2021</span><p>ID: d5ceca91-bf61-48c5-9f02-715fcb38846 ➟ <a href="https://platzi.com/p/CarlozMata/curso/1050-programacion-basica/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Prework: Configuración de Entorno de Desarrollo en Windows <p>Platzi</p><span>Expedición: febrero 2021</span><p>ID: f9419112-db50-4f83-b713.9c595335b9e9 ➟ <a href="https://platzi.com/p/CarlozMata/curso/2042-prework-windows/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Computación Básica<p>Platzi</p><span>Expedición: enero 2021</span><p>ID: b16cacar-0ab6-468b-b538-e68b10c1ae2e ➟ <a href="https://platzi.com/p/CarlozMata/curso/1741-computacion-basica-2019/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Introducción a la Web: Historia y Funcionamiento de Internet<p>Platzi</p><span>Expedición: enero 2021</span><p>ID: dd71c668-8450-49a3-a74a-368b0d88907c ➟ <a href="https://platzi.com/p/CarlozMata/curso/2053-introweb/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Client Data Security 2020<p>Dell EMC</p><span>Expedición: julio 2020</span><p>ID: YW56F1E6NJFEQ39V ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+<!--20-->   <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Core Client Credential 2020<p>Dell EMC</p><span>Expedición: junio 2020</span><p>ID: 3ZM4P3TRGB111RGN ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Workstation Credential 2020<p>Dell EMC</p><span>Expedición: junio 2020</span><p>ID: 5D3X39F6MM4Q1S9K ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Data Center Portfolio Credential 2019<p>Dell EMC</p><span>Expedición: diciembre 2019</span><p>ID: QLQKCFBTENQ4Q9CP ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Data Protection Credential 2019<p>Dell EMC</p><span>Expedición: diciembre 2019</span><p>ID: CTYBDEXTMFE415CC ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Networking Credential 2019<p>Dell EMC</p><span>Expedición: diciembre 2019</span><p>ID: TJYBDQVT3FE1QWWB ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Core Client Credential 2019<p>Dell EMC</p><span>Expedición: octubre 2019</span><p>ID: EXMGGEEZEEVE1DGH ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Workstation Credential 2019<p>Dell EMC</p><span>Expedición: octubre 2019</span><p>ID: B0ENDB163BV1QV93 ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Workstation Credential 2019<p>Dell EMC</p><span>Expedición: octubre 2019</span><p>ID: B0ENDB163BV1QV93 ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/veeam.jpg" alt="logo_veeam">Veeam Certified Veeam Sales Profesional<p>Veeam</p><span>Expedición: mayo 2020</span></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Client Data Security Credential 2018<p>Dell EMC</p><span>Expedición: diciembre 2018</span><p>ID: P81B4YJZL2V11E3E ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Cloud Client-Computing Credential 2018<p>Dell EMC</p><span>Expedición: diciembre 2018</span><p>ID: 6V1JQ2NRL1FQ1R38 ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Data Center Portfolio Credential 2018<p>Dell EMC</p><span>Expedición: agosto 2018</span><p>ID: 4BFDB39ZLEF41WWJ ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">SE: Core Client Credential 2018<p>Dell EMC</p><span>Expedición: junio</span><p>ID: F6MJBK7RLB4E1HW2 ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Sales: Core Client Credential 2018<p>Dell EMC</p><span>Expedición: junio 2018</span><p>ID: X6E2F6KZL1VE18K8 ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Sales: Workstation Credential 2018<p>Dell EMC</p><span>Expedición: junio 2018</span><p>ID: HBGJBP2TJ1VQ1G33 ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">SE: Workstation Credential 2018<p>Dell EMC</p><span>Expedición: octubre 2017</span><p> ID: C6221656J2BE1J32 ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Marketing Expert Credential 2017<p>Dell EMC</p><span>Expedición: diciembre 2017</span><p>ID: ZLZDG25Z2BBE1W3P ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Core Client Credential 2017<p>Dell EMC</p><span>Expedición: octubre 2017</span><p>ID: STFKF0MRDJF41PS8 ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Workstation Credential 2017<p>Dell EMC</p><span>Expedición: octubre 2017</span><p>ID: S6P2E9YRBF44QLK7 ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/dell.jpg" alt="logo_dell">Cloud Client-Computin Credential 2017 <p>Dell EMC</p><span>Expedición: octubre 2016</span><p>ID: B6PCF92ZDN4QQJ3B ➟ <a href="https://www.certmetrics.com/dell/public/verification.aspx" target="__blank">Ver Certificado</a></p></div></li>
+        </div>
+        </ul>
+        </div>
+        <div class="mov-button">
+            <button type="button" id="button-certification-on" onclick="mostrarCertificadosProfesionales();">Mostrar todos los Certificados (51)</button>
+            <button type="button" id="button-certification-off" onclick="ocultarCertificadosProfesionales();">Ocultar Certificados Profesionales</button>
+        </div>
+        <div class="separator"></div>
+        <h2><a name="certificado"><br>Certificados Personales<br><br></a></h2>
+        <div class="certifications-box">
+        <ul>
+<!--13-->   <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg"alt="logo_platzi">Estrategias de Productividad y Organización<p>Platzi</p><span>Expedición: julio 2022</span><p>ID: e50f2325-9909-4d88-a7f-5a17199059d6 ➟ <a href="https://platzi.com/p/CarlozMata/curso/2497-course/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Superar el Síndrome del Impostor<p>Platzi</p><span>Expedición: julio 2022</span><p>ID: 8a6d309f-f18c-4eba-b314-8e0fb1894805 ➟ <a href="https://platzi.com/p/CarlozMata/curso/2668-sindrome-impostor/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg"alt="logo_platzi">Debugging con Chrome DevTools<p>Platzi</p><span>Expedición: junio 2022</span><p>ID: 15b6dbc0-37de-437c-a729-36bce28d95dd ➟ <a href="https://platzi.com/p/CarlozMata/curso/1867-course/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Curso de Marca Personal: Creación de tu blog desde Cero<p>Platzi</p><span>Expedición: mayo 2022</span><p>ID: eff2c44d-432a-476b-bc65-1384f80f2d10 ➟ <a href="https://platzi.com/p/CarlozMata/curso/2593-course/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Estrategias de Contenido para LinkedIn<p>Platzi</p><span>Expedición: marzo 2022</span><p>ID: 1e4f6450-0c43-4a71-9b97-d50744c5a684 ➟ <a href="https://platzi.com/p/CarlozMata/curso/2212-estrategias-contenido-linkedin/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+        <div id="certificados_personales">
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Marca Personal 2018<p>Platzi</p><span>Expedición: marzo 2022</span><p>ID: 5283444d-8ef4-46ae-9453-c3797c090c24 ➟ <a href="https://platzi.com/p/CarlozMata/curso/1220-marca-personal-2018/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Marca Personal 2022<p>Platzi</p><span>Expedición: marzo 2022</span><p>ID: f306df0f-211e-483d-ar17-97751aef783 ➟ <a href="https://platzi.com/p/CarlozMata/curso/2822-marca-personal/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Optimización Perfil de LinkedIn<p>Platzi</p><span>Expedición: marzo 2022</span><p>ID: 3e9c6045-9318-4039-9345-2e875c87fea1 ➟ <a href="https://platzi.com/p/CarlozMata/curso/2499-course/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Organización Digital<p>Platzi</p><span>Expedición: marzo 2022</span><p>ID: 3b16f4ff-4cfe-49d8-ba4c-c8991797cab9c ➟ <a href="https://platzi.com/p/CarlozMata/curso/2177-course/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Estrategias para Aprender en Línea<p>Platzi</p><span>Expedición: febrero 2022</span><p>ID: 42d2a19b-804a-4d50-a2c3-259b8df5f6a6 ➟ <a href="https://platzi.com/p/CarlozMata/curso/2643-aprender/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Gestión Efectiva del Tiempo<p>Platzi</p><span>Expedición: febrero 2022</span><p>ID: df7ae01d-6760-43ee-a96e-93671650adf5 ➟ <a href="https://platzi.com/p/CarlozMata/curso/1749-gestion-tiempo/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/platzi.jpg" alt="logo_platzi">Estrategias para Aprender en Línea Efectivamente<p>Platzi</p><span>Expedición: noviembre 2021</span><p>ID: 52b4ace6-1228-45b8-o9c42-2d178ceefab6 ➟ <a href="https://platzi.com/p/CarlozMata/curso/1608-aprender-2019/diploma/detalle/" target="__blank">Ver Certificado</a></p></div></li>
+            <li><div class="certification"><img class="img_university_cert"src="./img/company/google.jpg" alt="logo_google">Productividad Personal<p>Google</p><span>Expedición: septiembre 2020</span><p>ID: WQ3 JDP W2X ➟ <a href="https://learndigital.withgoogle.com/link/1nur091p2ww" target="__blank">Ver Certificado</a></p></div></li>
+        </div>
+        </ul>
+        </div>
+    <div class="mov-button">
+    <button type="button" id="button2-certification-on" onclick="mostrarCertificadosPersonales();">Mostrar todos los Certificados (13)</button>
+    <button type="button" id="button2-certification-off" onclick="ocultarCertificadosPersonales();">Ocultar Certificados Personales</button>
+    </div>
+    </div>
+    </div>
 </section>
-
-
-<!------ Finaliza mis proyectos ------>
-<!------ Comienza el Footer ------>
-    </header>
+<!-- CONTACT -->
+<section class="contact">
+<div class="box">
+    <a href="./prueba.html" name="contacto"><h2>Contáctame</h2></a>
+    <div class="contact-g">
+        <div class="col-form">
+            <form class="form" action="https://formspree.io/f/xoqrpyrn" method="POST">
+            <div>
+                <input type="text" class="form_input" placeholder=" Nombre" name="name">
+                <input type="email" class="form_input" placeholder=" Correo" name="email">
+                <textarea class="form_input form_input--message" placeholder=" Mensaje" name="message"></textarea>
+                <input type="submit" value="Enviar" class="form_cta">
+            </div>
+            </form>
+        </div>
+    <div class="col-map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119209.91650430342!2d-89.70295826080837!3d20.980211524295406!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f56715cab450d17%3A0x5dfc155715abeb09!2zTcOpcmlkYSwgWXVjLg!5e0!3m2!1ses-419!2smx!4v1651504438255!5m2!1ses-419!2smx" width="650" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>        
+    </div>
+    </div>
+</section>
+    <!-- FOOTER -->
+</main>
 <footer>
-    <div class="terminosycondiciones">Terminos y condiciones</div>
-    <a class="footer_contactame" id="contactame" href=""><b>¡Contactame!<b><a>
-    <div class="correo" ><a href="mailto:carlos_1992_hotmail.com">carlos_1992_@hotmail.com</a></div>
- </footer>
-<!------ Finaliza Footer ------>
+    <div class="footer">
+        <div><a href="https://carlozmata.com/" target="__blank">CarlozMata © 2022</a></div>
+        <div class="footer-right">
+            <a href="https://github.com/CarlozMata" target="__blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/carlosalbertolopezmata/" target="__blank">LinkedIn</a>
+            <a href="https://twitter.com/CarlozMata" target="__blank">Twitter</a>
+        </div>
+    </div>
+</footer>
+<script src="https://raw.githack.com/eKoopmans/html2pdf/master/dist/html2pdf.bundle.js"></script>
+<script src="./main.js"></script>
 </body>
-</html> 
+</html>
